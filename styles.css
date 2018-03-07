@@ -1,0 +1,25 @@
+/*idea, class="active" -> subrayado
+.button:hover { background-color: color del sitio en RGBA, con alpha 0.5 o}*/
+
+body {
+	grid-template: "nav "Inicio" "Menu" "Invitados";
+}
+nav {
+	display:flex;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 100%;
+	position: fixed;
+	/*z-index: 10;*/
+	background-color: orange;
+  padding: 10px 50px 0 0;
+	text-align: center;
+
+}
+.Inicio {
+	height: 500px;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	color: red;
+	background-color: grey;
+}
