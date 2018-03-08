@@ -6,7 +6,7 @@ body {
 	padding: 0 0;
 	background-color: #333;
 	}
-nav ul{
+ul.nav{
 	display: inline-block;
 	list-style-type: none;
 	width: 100%;
