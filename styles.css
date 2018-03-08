@@ -4,6 +4,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color:
 	}
 nav ul{
 	display: inline-block;
@@ -18,7 +19,7 @@ nav ul{
 	text-align: center;
 	}
  li a {
-	 float: right;
+	 float: left;
 	 display: inline-block;
 	 color: white;
 	 text-align: center;
