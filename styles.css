@@ -29,11 +29,11 @@ nav ul{
 	 text-decoration: none;
 	 justify-content: center;
  	}
- li a:hover {
+ li a nav:hover {
 	 background-color: #111;
 	 transition: 0.5s;
    text-decoration: underline;
- }
+	 }
 #Home {
 	/*display: block;*/
 	top: 60px;
@@ -43,6 +43,10 @@ nav ul{
 	color: white;
 	background-color: grey;
 }
+#Home h1 {
+	top: 80px;
+  font-family: Garamond, cursive;
+	}
 #About {
 	/*display: block;*/
 	background-color: orange;
