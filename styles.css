@@ -31,7 +31,8 @@ nav ul{
  	}
  li a:hover {
 	 background-color: #111;
-	 transition: 1s;
+	 transition: 0.5s;
+   text-decoration: underline;
  }
 #Home {
 	/*display: block;*/
