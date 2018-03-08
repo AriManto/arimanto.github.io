@@ -12,6 +12,7 @@ body {
 	width: 100%;
 	overflow:hidden;
 	text-align: center;
+	background-color: #333;
 	}
  .nav a {
 	 display: inline-block;
@@ -20,7 +21,7 @@ body {
 	 padding: 20px;
 	 text-decoration: none;
 	 }
- li a:hover {
+ .nav a:hover {
 	 background-color: #111;
 	 transition: 0.5s;
    }
