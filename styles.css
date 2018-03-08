@@ -3,7 +3,7 @@
 
 body {
 	}
-nav {
+nav ul{
 	display: block;
 	list-style-type: none;
 	width: 100%;
