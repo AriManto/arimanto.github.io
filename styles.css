@@ -2,6 +2,7 @@
 .button:hover { background-color: color del sitio en RGBA, con alpha 0.5 o}*/
 
 body {
+	margin: 0;
 	padding: 0;
 	}
 nav ul{
@@ -13,12 +14,11 @@ nav ul{
 	/*z-index: 10;*/
 	background-color: #333;
 	color: white;
-  padding: 0 0;
+  padding: 0;
 	text-align: center;
-	overflow: hidden;
- 	}
+	}
  li a {
-	 float: left;
+	 float: right;
 	 display: inline-block;
 	 color: white;
 	 text-align: center;
