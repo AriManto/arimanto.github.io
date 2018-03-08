@@ -15,8 +15,25 @@ nav {
 	color: white;
   padding: 10px 50px 0 0;
 	text-align: center;
-
-}
+ }
+ nav ul {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+	 background-color: #333;
+	 float: right;
+ }
+ li a {
+	 display: block;
+	 color: white;
+	 text-align: center;
+	 padding: 16px;
+	 text-decoration: none;
+ }
+ li a:hover {
+	 background-color: #111;
+ }
 .Inicio {
 	height: 500px;
 	font-family: Calibri, sans-serif;
