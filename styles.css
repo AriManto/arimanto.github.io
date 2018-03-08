@@ -2,6 +2,7 @@
 .button:hover { background-color: color del sitio en RGBA, con alpha 0.5 o}*/
 
 body {
+	padding: 0;
 	}
 nav ul{
 	display: inline-block;
@@ -21,34 +22,35 @@ nav ul{
 	 display: inline-block;
 	 color: white;
 	 text-align: center;
-	 padding: 16px;
+	 padding: 20px;
 	 text-decoration: none;
+	 justify-content: center;
  	}
  li a:hover {
 	 background-color: #111;
  }
 .Home {
-	display: block;
+	/*display: block;*/
 	height: 500px;
 	font-family: Calibri, sans-serif;
 	text-align: center;
-	color: red;
+	color: white;
 	background-color: grey;
 }
 .About {
-	display: block;
+	/*display: block;*/
 	background-color: orange;
 	color: #333;
 	height: 500px;
 }
 .Products {
-	display: block;
+	/*display: block;*/
 	background-color: white;
 	color: black;
 	height: 500px;
 }
 .Contact {
-	display: block;
+	/*display: block;*/
 	background-color: teal;
 	height: 500px;
 	color: white;
