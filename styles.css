@@ -29,10 +29,12 @@ nav ul{
 	 text-decoration: none;
 	 justify-content: center;
  	}
- li a nav:hover {
+ li a:hover {
 	 background-color: #111;
 	 transition: 0.5s;
-   text-decoration: underline;
+   }
+	 p {
+		 font-family: 'Oswald', 'Calibri', sans-serif;
 	 }
 #Home {
 	/*display: block;*/
