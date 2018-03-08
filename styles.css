@@ -30,7 +30,7 @@ nav ul{
  li a:hover {
 	 background-color: #111;
  }
-.Home {
+#Home {
 	/*display: block;*/
 	top: 60px;
 	height: 500px;
@@ -39,19 +39,19 @@ nav ul{
 	color: white;
 	background-color: grey;
 }
-.About {
+#About {
 	/*display: block;*/
 	background-color: orange;
 	color: #333;
 	height: 500px;
 }
-.Products {
+#Products {
 	/*display: block;*/
 	background-color: white;
 	color: black;
 	height: 500px;
 }
-.Contact {
+#Contact {
 	/*display: block;*/
 	background-color: teal;
 	height: 500px;
