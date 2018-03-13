@@ -10,6 +10,8 @@ body {
   text-align: left;
   }
 .navbar a {
+    /* display: flex;
+    flex-direction: row; */
     display: inline-block;
     text-decoration: none;
     color: white;
