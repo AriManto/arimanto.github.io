@@ -30,12 +30,27 @@ body {
   background-color: #99ccff;
   color: #ffffff;
   font-size: 40px;
+  margin: 30px;
   }
-.container {
-  position: relative;
-  transform: translateX(-50%);
-  left: 50%;
+  h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin: 5px 15px;
   }
+  h3 {
+    font-family: Arial, serif;
+    font-size: 18px;
+    margin: 5px 15px;
+  }
+  p, li, form {
+    font-family: calibri, sans-serif;
+    margin: 5px 15px;
+  }
+  label, input, select, option {
+    font-family: arial, sans-serif;
+    margin: 2px 5px;
+  }
+
 a.link{
   font-family: Georgia, serif;
   font-size: 24px;
@@ -44,8 +59,8 @@ a.link{
   text-decoration:none;
   display: inline-block;
   background: #e6f2ff;
-  width: 40%;
-  margin: 5px 15px 5px 15px;
+  width: 44%;
+  margin: 5px 10px;
   padding: 5px;
   border: 2px solid black;
 }
@@ -53,4 +68,7 @@ a.link:hover {
   background: orange;
   color: white;
   transition: 0.8s;
+  }
+  img {
+    margin: 5px 20px;
   }

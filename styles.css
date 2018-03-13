@@ -4,8 +4,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	background:color: #333;
-	}
+	/* background-color: #333; */
+	background-image:url("universemilkyway.jpg");
+	background-size:cover;
+}
 .nav {
 	position: fixed;
 	top: 0;
