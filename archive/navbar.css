@@ -1,0 +1,28 @@
+/* HTML
+<div class="navbar">
+  <a href="../index.html" class="mainsite">Main Site</a>
+  <a href="index.html">All Exercises</a>
+</div>
+*/
+body {
+  margin:0;
+}
+.navbar {
+  background: #1a8cff;
+  width: 100%;
+  text-align: left;
+  }
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family:calibri,sans-serif;
+  }
+.navbar .mainsite {
+    color:orange;
+    }
+.navbar a:hover {
+    background: black;
+    transition: 0.8s;
+  }
