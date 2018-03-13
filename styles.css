@@ -10,7 +10,7 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	overflow:hidden;
+	overflow: hidden;
 	text-align: center;
 	background-color: #333;
 	}
@@ -25,43 +25,49 @@ body {
 	 background-color: #111;
 	 transition: 0.5s;
    }
-	 p {
-		 font-family: 'Oswald', 'Calibri', sans-serif;
-
+p, li{
+	 font-family: 'Calibri', sans-serif;
 	 }
 #Home {
-	/*display: block;*/
 	margin-top: 58px;
-	height: 500px;
+	padding: 20px;
 	font-family: Calibri, sans-serif;
 	text-align: center;
 	color: white;
 	background-color: grey;
 }
 #Home h1 {
-	top: 80px;
-  font-family: Garamond, cursive;
+	  font-family: Georgia, cursive;
+		font-size: 40px;
+		border: 2px solid white;
+		padding: 10px;
+		text-align: center;
 	}
 #About {
-	/*display: block;*/
+	padding: 5px 20px 5px 20px;
 	background-color: orange;
 	color: #333;
-	height: 500px;
+	/* height: 500px; */
 }
-#Products {
-	/*display: block;*/
+h2 {
+	font-size: 30px;
+	font-family: Garamond;
+}
+#Skills {
+	padding: 5px 20px 5px 20px;
 	background-color: white;
 	color: black;
-	height: 500px;
 }
 #Contact {
-	/*display: block;*/
+	padding: 5px 20px 5px 20px;
 	background-color: teal;
-	height: 500px;
 	color: white;
+	/* font-family: calibri; */
 }
 footer {
 	background-color: #333;
 	height: 60px;
 	color: white;
+	padding: 5px 20px 5px 20px;
+	text-align:center;
 }

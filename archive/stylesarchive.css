@@ -1,35 +1,51 @@
 body {
-  background: #004080;
+  background: #cce6ff;
   padding:0;
   margin:0;
   }
-.header {
-  display: inline-block;
-  top: 0;
-  background: #000d1a;
+.navbar {
+  background: #1a8cff;
   width: 100%;
-  padding: 20px;
-  text-decoration: none;
-  color: white;
+  }
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family:calibri,sans-serif;
+  }
+.navbar .mainsite {
+    color:orange;
+    }
+.navbar a:hover {
+    background: black;
+    transition: 0.8s;
   }
 #titulo {
   font-family: Oswald, Calibri, sans-serif;
   text-align: center;
-  width: 280px;
+  width: 440px;
   padding: 5px;
   border: 2px solid black;
   background-color: #99ccff;
   color: #ffffff;
-}
+  font-size: 40px;
+  }
+.container {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  }
 a.link{
   font-family: Georgia, serif;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: #4d4d4d;
   text-decoration:none;
   display: inline-block;
   background: #e6f2ff;
-  width: 50%;
+  width: 40%;
+  margin: 5px 15px 5px 15px;
   padding: 5px;
   border: 2px solid black;
 }
