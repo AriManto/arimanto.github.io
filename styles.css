@@ -4,7 +4,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #333;
+	background:color: #333;
 	}
 .nav {
 	position: fixed;
@@ -20,7 +20,7 @@ body {
 	 color: white;
 	 padding: 20px;
 	 text-decoration: none;
-	 } 
+	 }
  .nav a:hover {
 	 background-color: #111;
 	 transition: 0.5s;
@@ -34,7 +34,9 @@ p, li{
 	font-family: Calibri, sans-serif;
 	text-align: center;
 	color: white;
-	background-color: grey;
+	/* background-color: grey; */
+	background-image:url("universe.jpg");
+	background-size:cover;
 }
 #Home h1 {
 	  font-family: Georgia, cursive;
@@ -42,6 +44,7 @@ p, li{
 		border: 2px solid white;
 		padding: 10px;
 		text-align: center;
+		background-color: rgba(186, 186, 186, 0.3)
 	}
 #About {
 	padding: 5px 20px 5px 20px;
