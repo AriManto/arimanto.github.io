@@ -2,10 +2,12 @@ body {
   background: #cce6ff;
   padding:0;
   margin:0;
+  text-align: center;
   }
 .navbar {
   background: #1a8cff;
   width: 100%;
+  text-align: left;
   }
 .navbar a {
     display: inline-block;
@@ -30,17 +32,17 @@ body {
   background-color: #99ccff;
   color: #ffffff;
   font-size: 40px;
-  margin: 30px;
+  margin: 30px auto;
   }
   h2 {
     font-family: Georgia, serif;
     font-size: 25px;
-    margin: 5px 15px;
+    margin: 20px 15px;
   }
   h3 {
     font-family: Arial, serif;
     font-size: 18px;
-    margin: 5px 15px;
+    margin: 20px 15px;
   }
   p, li, form {
     font-family: calibri, sans-serif;
@@ -50,17 +52,26 @@ body {
     font-family: arial, sans-serif;
     margin: 2px 5px;
   }
+  form {
+    border: 2px grey solid;
+    width: 570px;
+    /* min-width: 300px; */
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+  }
 
 a.link{
   font-family: Georgia, serif;
   font-size: 24px;
   text-align: center;
   color: #4d4d4d;
-  text-decoration:none;
-  display: inline-block;
+  text-decoration: none;
+  /* display: inline-block; */
+  display: block;
   background: #e6f2ff;
   width: 44%;
-  margin: 5px 10px;
+  margin: 5px auto;
   padding: 5px;
   border: 2px solid black;
 }
