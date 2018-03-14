@@ -1,0 +1,8 @@
+a.nav-link:hover {
+  background-color: grey;
+  transition: 0.8s;
+}
+nav{
+  background-color: #dddddd;
+  padding: 0;
+}
