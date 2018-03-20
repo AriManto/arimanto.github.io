@@ -34,7 +34,6 @@ body {
 .navbar a {
     display: inline-block;
     text-decoration: none;
-    color: white;
     padding: 15px;
     font-family:calibri,sans-serif;
   }
@@ -49,6 +48,9 @@ body {
 		margin:auto;
 		padding: 15px;
 		width: 100%;
+	}
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: white;
 	}
 	div.navbar.navbar-expand-sm.navbar-dark.bg-dark {
 		padding: 0px;
