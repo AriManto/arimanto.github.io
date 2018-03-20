@@ -1,8 +1,8 @@
-/* a.nav-link:hover {
-  background-color: grey;
+a.nav-link:hover {
+  color:white;
   transition: 0.8s;
-} */
+}
 nav{
-  background-color: #dddddd;
+  background-color: #black;
   padding: 0;
 }
