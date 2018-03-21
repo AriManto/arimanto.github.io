@@ -41,10 +41,13 @@ body {
 		margin: auto;
 		text-align: center;
 	}
-	a.active.nav-link.nav-home {
+	a.nav-link.nav-home.padding20 {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+  li.nav-item {
+    margin:0;
+  }
 /* =============================================================== */
 /* =                            CONTENT                          = */
 /* =============================================================== */
