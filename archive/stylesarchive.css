@@ -1,30 +1,53 @@
 body {
   background: #cce6ff;
   padding:0;
-  margin:0;
+  margin-top: 80px;
   text-align: center;
   }
+/* =========================================== */
+/*                  NAVBAR                     */
+/* =========================================== */
 .navbar {
+	position: fixed;
+	top:0;
   background: #1a8cff;
   width: 100%;
   text-align: left;
+	padding:0;
   }
 .navbar a {
-    /* display: flex;
-    flex-direction: row; */
     display: inline-block;
     text-decoration: none;
-    color: white;
     padding: 15px;
     font-family:calibri,sans-serif;
   }
-.navbar .mainsite {
-    color:orange;
-    }
 .navbar a:hover {
     background: black;
     transition: 0.8s;
   }
+	button.navbar-toggler {
+		padding: 10px;
+	}
+	a.nav-link {
+		margin:auto;
+		padding: 15px;
+		width: 100%;
+	}
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: white;
+	}
+	div.navbar.navbar-expand-sm.navbar-dark.bg-dark {
+		padding: 0px;
+		margin: auto;
+		text-align: center;
+	}
+	a.active.nav-link.nav-home {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+/* =============================================================== */
+/* =                            CONTENT                          = */
+/* =============================================================== */
 #titulo {
   font-family: Oswald, Calibri, sans-serif;
   text-align: center;
