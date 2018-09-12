@@ -28,7 +28,7 @@ body {
 .navbar {
 	position: fixed;
 	top:0;
-  background: #252839!important;
+  background-color: #252839!important;
   width: 100%;
   text-align: left;
 	padding:0;
@@ -88,7 +88,7 @@ div#Home {
 }
 
 #Home h1  {
-	  font-family: "Roboto Slab", sans-serif;
+	  font-family: "Raleway", sans-serif;
 		font-size: 4rem;
 		font-weight: bold;
 		text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
@@ -113,6 +113,9 @@ div#Home {
 	background-color: orange;
 	color: #333;
 	margin-top: 1rem;
+}
+#About>p {
+	text-indent: 5%;
 }
 h2 {
 	font-size: 2rem;
@@ -142,8 +145,13 @@ footer {
 	color: white;
 	/* text-align: right; */
 	padding: 10px;
-	/* display: inline-block; */
 	width: 100%;
+}
+footer .container {
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 footer a {
 /* float: right; */
@@ -151,6 +159,10 @@ right:0;
 font-size: 50px;
 margin: 5px;
 color: rgba(255,255,255,.5);
+text-align: right;
+}
+footer p {
+	margin:1em 0;
 }
 footer a:hover {
 	color: white;

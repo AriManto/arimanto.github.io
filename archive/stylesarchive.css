@@ -10,7 +10,7 @@ body {
 .navbar {
 	position: fixed;
 	top:0;
-  background: #1a8cff;
+  background-color: #252839!important;
   width: 100%;
   text-align: left;
 	padding:0;
@@ -19,7 +19,7 @@ body {
     display: inline-block;
     text-decoration: none;
     padding: 15px;
-    font-family:calibri,sans-serif;
+    font-family: "Raleway",sans-serif;
   }
 .navbar a:hover {
     background: black;
@@ -52,7 +52,7 @@ body {
 /* =                            CONTENT                          = */
 /* =============================================================== */
 #titulo {
-  font-family: Oswald, Calibri, sans-serif;
+  font-family: 'Raleway','Oswald', 'Calibri', sans-serif;
   text-align: center;
   width: 440px;
   padding: 5px;
