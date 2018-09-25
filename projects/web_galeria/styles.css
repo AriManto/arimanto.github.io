@@ -86,6 +86,14 @@ main img {
         grid-template-rows: 20% 20% 20% 20% 20% 20%;
     }
 }
+@media (max-width: 800px){
+    main .container {
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
 /*
 -----------------ABOUT------------------------------------------
 */
