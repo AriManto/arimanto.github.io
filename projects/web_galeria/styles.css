@@ -45,6 +45,14 @@ ul li {
     height:50%;
     line-height:70px;
     list-style: none;
+
+}
+header a {
+    color:white;
+    text-decoration: none;
+}
+header a:hover {
+    color:pink;
 }
 /*
 -------------------------MAIN--------------------------------
@@ -90,6 +98,7 @@ main img {
     vertical-align: center;
     font-size:1.3em;
     font-family: Calibri, sans-serif;
+    width: 60%;
 }
 #About img {
     border:5px solid white;
