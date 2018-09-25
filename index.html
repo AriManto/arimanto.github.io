@@ -4,8 +4,30 @@
 		<title>AriHub</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- ****** faviconit.com favicons ****** -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+		<link rel="apple-touch-icon" href="/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="/favicon-144.png">
+		<meta name="msapplication-config" content="/browserconfig.xml">
+		<!-- ****** faviconit.com favicons ****** -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<link href="styles.css" type="text/css" rel=stylesheet>
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:400,700" rel="stylesheet">
 	</head>
@@ -17,8 +39,9 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a href=#Home class="active nav-link nav-home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-					<li class="nav-item"><a href=#About class="nav-link"><i class="fa fa-id-card-o" aria-hidden="true"></i> About</a></li>
+					<li class="nav-item"><a href=#About class="nav-link"><i class="fas fa-address-card" aria-hidden="true"></i> About</a></li>
 					<li class="nav-item"><a href=#Skills class="nav-link"><i class="fa fa-tasks" aria-hidden="true"></i> Skills</a></li>
+					<li class="nav-item"><a href=#Courses class="nav-link"><i class="fa fa-book-reader" aria-hidden="true"></i> Courses</a></li>
 					<li class="nav-item"><a href=#Contact class="nav-link"><i class="fa fa-user-circle" aria-hidden="true"></i> Contact</a></li>
 					<li class="nav-item"><a href=archive/index.html class="nav-link"><i class="fa fa-book" aria-hidden="true"></i>
 					 Exercises Archive</a></li></ul>
@@ -66,19 +89,24 @@
 			</ul>
 			<h3><em>Currently learning</em></h3>
 			<ul>
-					<li>Java</li>
+					<li>Java<ul>
+						<li>Swing library for GUI</li>
+						<li>Java Database Connector</li>
+						<li>Servlets and JSP</li>
+						<li>Spring MVC framework</li>
+						</ul></li>
 					<li>SQL (MySQL)</li>
 					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>JavaScript</li>
-					<li>Bootstrap 4</li>
-					<li>Font Awesome</li>
-					<li>Version control with GitHub, GUI and terminal</li>
+					<li>CSS3 <ul>
+						<li>Bootstrap 4</li>
+						<li>Font Awesome</li></ul></li>
+					<li>JavaScript vanilla</li>
+					<li>Version control with GitHub, via GUI and terminal</li>
 			</ul>
 			<h3><em>To learn</em></h3>
 			<ul>
-					<li>jQuery, JSON</li>
-					<li>CSS: SASS, responsive design, media queries</li>
+					<li>jQuery, JSON, AJAX</li>
+					<li>CSS: LESS/SASS, responsive design, media queries</li>
 					<li>Java: Spring framework, GUI with Swing. Deploying Java as backend</li>
 					<li>React.js, Node.js for backend</li>
 					<li>Working with APIs. XML</li>
@@ -91,13 +119,29 @@
 					<li>Vue.js</li>
 				</ul>
 		</div>
+		<div id="Courses" class="jumbotron">
+				<h2>&ltCourses /&gt</h2><hr>
+				<h3><em>Here are some of the courses, videos and articles I've been following and can recommend.</em></h3>
+				<ul><li><a href="https://www.udemy.com/java-tutorial/">Java Tutorial for Complete Beginners</a> by John Purcell. He also has a
+				<a href="https://www.youtube.com/user/caveofprogramming">YouTube Channel.</a></li>
+				<li><a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview">The Web Developer Bootcamp</a> and
+				<a href="https://www.udemy.com/the-advanced-web-developer-bootcamp/learn/v4/overview">The Advanced Web Developer Bootcamp</a> by Colt Steele.
+				Great instructor and the content of both courses are well put together. Have yet to finish the first one but so far it's been a great learning experience.</li>
+				<li><a href="https://www.freecodecamp.org/">FreeCodeCamp</a>, possibly the best site for beginners and intermediate developers.
+				It has an inmense amount of free resources covering the most important skills for a front end developer. They also have a lot of project ideas and
+				 offer completion certificates.</li>
+				
+			</ul>
+			</div>
 		<div id="Contact" class="jumbotron">
 			<h2>&ltContact /&gt</h2><hr>
 			<h3><em>Currently there's no contact info</em></h3>
-			<p>It makes no sense for me to add any info with my current skills. Later
-				down the road I'll add an email for collaborations and business inquiries. </p>
+			<p>Later down the road I'll add an email for collaborations and business inquiries. </p>
 		</div>
+			<!--Sección 4-->
+	
 	</div>
+	
 		<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -105,9 +149,9 @@
 						<p>2018 &copy</p>
 				</div>
 				<div class="container">
-						<a href=#><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-						<a href=#><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-						<a href=#><i class="fa fa-github-square" aria-hidden="true"></i></a>
+						<a href=><i class="fab fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/ariel-manto/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+						<a href="https://github.com/AriManto/"><i class="fab fa-github-square" aria-hidden="true"></i></a>
 				</div>
 			</div>
 
