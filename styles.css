@@ -28,17 +28,27 @@ body {
 .navbar {
 	position: fixed;
 	top:0;
-  background-color: #252839!important;
-  width: 100%;
-  text-align: left;
+	background-color: #252839!important;
+	width: 100%;
+	text-align: left;
 	padding:0;
+}
+  .xtarget::before {
+	content:"";
+	display:block;
+	height:17px; /* fixed header height*/
+	margin:-17px 0 0; /* negative fixed header height */
+	visibility: hidden;
   }
 .navbar a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 15px;
-    font-family: "Raleway", sans-serif;
-  }
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px;
+	font-family: "Raleway", sans-serif;
+	margin-top:-90px;
+	padding-top:90px;
+}
+
 .navbar a:hover {
     background: black;
     transition: 0.8s;
@@ -82,26 +92,57 @@ div#Home {
 	text-align: center;
 	color: white;
 	background-image: url("blake-connally-373084-unsplash.jpg");
-	background-size: cover;
+	background-size: 1200px;
 	background-position: center;
 	background-repeat: no-repeat;
-
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	div#Home{
+		background-size:1500px;
+		background-position-y:50%;
+	}
 }
 
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	div#Home{
+		background-size: 1100px;
+
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	div#Home{
+		background-size:1200px;
+
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	div#Home{
+		background-size:1200px;
+
+	}
+}
+
+
 #Home h1  {
-	  font-family: "Raleway", sans-serif;
-		font-size: 4rem;
-		font-weight: bold;
-		text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
-		border: 2px solid white;
-		color: orange;
-		width: 90%;
-		max-width: 500px;
-		margin: 60px auto 10px auto;
-		padding: 10px;
-		text-align: center;
-		background-color: rgba(186, 186, 186, 0.4)
-		/* width: 300px; */
+	font-family: "Raleway", sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+	border: 2px solid white;
+	color: orange;
+	width: 90%;
+	max-width: 500px;
+	margin: 60px auto 10px auto;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(186, 186, 186, 0.4)
+	/* width: 300px; */
 	}
 #Home h2 {
 	text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
@@ -138,7 +179,7 @@ h3 {
 	/*color: white;*/
 }
 #Courses a {
-font-weight: bold;
+	font-weight: bold;
 }
 #Contact {
 	background-color: #CCC9E7;
@@ -162,12 +203,12 @@ footer .container {
 	align-items: center;
 }
 footer a {
-/* float: right; */
-right:0;
-font-size: 50px;
-margin: 5px;
-color: rgba(255,255,255,.5);
-text-align: right;
+	/* float: right; */
+	right:0;
+	font-size: 50px;
+	margin: 5px;
+	color: rgba(255,255,255,.5);
+	text-align: right;
 }
 footer p {
 	margin:1em 0;

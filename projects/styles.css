@@ -1,0 +1,23 @@
+body {
+    justify-content: center;
+    margin: 15px auto;
+    padding: 5% 0;
+    background-color:#f2f3f5;
+}
+#titulo {
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 1.2em;
+    margin: 0 2em;
+}
+.navbar {
+    position: fixed;
+    top:0;
+    background-color: #252839!important;
+    width: 100%;
+    text-align: left;
+}
+.jumbotron {
+    background-color: white!important;
+    margin: 0 auto;
+}
