@@ -29,7 +29,7 @@ header > img {
     height:152px;
 }
 header > h1 {
-    font-family: Calibri;
+    font-family: Tahoma, Verdana, sans-serif;
     font-size: 3em;
     margin-left:15%;
     color:rgb(219, 219, 219);
@@ -50,6 +50,7 @@ ul li {
 header a {
     color:white;
     text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header a:hover {
     color:pink;
@@ -60,7 +61,7 @@ header a:hover {
 h3 {
     margin:1em auto 0 auto;
     text-align:center;
-    font-size:2em;
+    font-size:3em;
     font-family:Tahoma;
 }
 main .container {
@@ -85,26 +86,36 @@ main img {
         grid-template-rows: 20% 20% 20% 20% 20% 20%;
     }
 }
+/*
+-----------------ABOUT------------------------------------------
+*/
+#About {
+    margin: 3em auto 0 auto;
+}
 #About .container {
     display:flex;
-    margin:0 1em;
+    justify-content: center;
+    margin:0 10%;
     padding:auto 0;
     margin-block-start: 2em;
     margin-block-end: 2em;
     vertical-align: center;
-    height:16em;
+    height:40em;
 }
 #About p {
-    vertical-align: center;
+    margin:0 auto;
+    align-self: center;
+    text-align: center;
+    padding:4em 2em 6em 2em;
     font-size:1.3em;
     font-family: Calibri, sans-serif;
     width: 60%;
 }
 #About img {
     border:5px solid white;
-    border-radius:100px;
-    max-width:300px;
-    max-height:200px;
+    border-radius:400px;
+    max-width:400px;
+    max-height:400px;
     margin-right:2em;
     align-self:center;
 }
