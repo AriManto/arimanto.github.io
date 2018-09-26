@@ -188,6 +188,37 @@ main img {
         padding:0;
     }
 }
+/*---------FORM----------*/
+form {
+    display: grid;
+    grid-template-columns:200px 1fr;
+    overflow: hidden;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto;
+    max-width: 600px;
+    grid-gap: 16px;
+}
+ 
+label {
+    grid-column:1/2;
+    float: left;
+    width: 200px;
+    padding-right: 24px;
+}
+ 
+input, textarea,button {
+    grid-column:2/3;
+    float: right;
+}
+ 
+button {
+    float: right;
+}
+textarea {
+    min-height: 85px;
+}
 /*Small 500-840*/
 @media (min-width:510px) and (max-width: 839px){
     header {
