@@ -11,6 +11,7 @@ body {
     margin: 0 2em;
 }
 .navbar {
+    display:flex;
     position: fixed;
     top:0;
     background-color: #252839!important;
