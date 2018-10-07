@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<style> body{
+    background: linear-gradient(90deg, rgba(89,1,25,1) 0%,rgba(143,2,34,1) 44%,rgba(201,0,60,1) 100%); 
+}
+.header{display:flex;width:100%; justify-content: center; padding:10px}
+.header a{color:black;text-align:center;text-decoration: none;font-weight:800;padding:10px 5px;margin:5px auto;}
+.highlight{background:orange;top:0; left:0; z-index:-1;display:block; transition: all 0.4s;
+position:absolute;border-radius:10px;}
+p{font-family:'Tw Cen MT';font-size:20px;}
+</style>
+<body>
+    <div class="header">
+        <a href="#">Link uno</a>
+        <a href="#">Link dos</a>
+        <a href="#">Link treeeeeees</a>
+        <a href="#">Link cuatrito</a>
+        <a href="#">Link cinco</a>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis, dolor pharetra finibus auctor, elit nulla dapibus lectus, in dignissim tellus mauris id massa. Nullam erat nisl, porttitor ac purus a, rutrum tempor sem. Vivamus nec augue non neque aliquam semper. Integer sem orci, tristique in maximus et, ultrices non quam. Suspendisse auctor lorem et orci lobortis rutrum. Sed sodales tincidunt porta. Mauris aliquam fringilla massa nec faucibus. Integer felis neque, iaculis ut elit blandit, hendrerit fringilla odio. Aenean lacus leo, efficitur nec est quis, scelerisque consectetur lacus. Phasellus quis odio felis. Duis et bibendum urna. Integer dapibus ante sit amet eros dignissim, eget viverra tellus lacinia. Cras vulputate, massa ac sodales sollicitudin, nunc tortor ornare velit, et sagittis augue erat et nunc.
+
+                <br>Etiam libero arcu, commodo id arcu sed, ultricies lacinia ante. Pellentesque quis elementum nisi. Ut dui arcu, blandit ut dolor in, congue tempus risus. Ut eget eros lacinia, ornare metus pulvinar, porta lorem. Ut a nulla pellentesque, tincidunt ligula et, maximus est. Mauris varius ultrices nisl, ac efficitur ex pulvinar ac. Quisque eu cursus tellus. Mauris vel turpis eu ante facilisis tempus aliquet in elit. Nullam eget molestie lectus. Aenean mollis tortor vel velit consequat commodo. Sed posuere erat eu arcu ultrices, vitae lacinia est congue.
+                
+                <br>Morbi in convallis lorem. Phasellus venenatis malesuada est, vel pharetra ex consectetur id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Aliquam erat volutpat. Donec et mollis diam. Cras imperdiet sodales nulla, vel faucibus ex imperdiet ut. Sed pharetra quam nisi, volutpat consectetur odio finibus ac. Donec quis dui nec massa pellentesque porta vitae at eros. Morbi sit amet bibendum nibh, sit amet placerat mauris. Maecenas gravida auctor rutrum.
+                
+                <br>Integer <a href=#>tempus</a> justo quis porta eleifend. Vivamus condimentum at ipsum nec posuere. Phasellus vitae pulvinar libero. Nam finibus, mi nec tincidunt gravida, risus tortor sodales sem, ultricies mollis magna nibh id ligula. Aliquam placerat mi eget justo suscipit, at tincidunt ante sagittis. Nunc ut sem placerat, vehicula augue eu, hendrerit ex. Aenean vitae porttitor nulla, id sollicitudin est.
+                
+                <br>Fusce mi nulla, laoreet at quam non, placerat sagittis dolor. Nullam purus est, ultrices sed mattis et, suscipit molestie dui. Proin cursus suscipit tempor. Etiam eget augue eu nisl rutrum tempus. In hac habitasse platea dictumst. Morbi id neque non sem efficitur consequat. Integer posuere odio vel purus condimentum, ut bibendum nisl finibus. Proin ut risus eros. Vivamus nec risus ipsum. Curabitur fermentum tempor porttitor. Curabitur interdum vestibulum vulputate. Ut neque ligula, porttitor ut tincidunt non, euismod sit amet libero.</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script>
+        const links=$('a');
+        const highlight = document.createElement('span');
+        highlight.classList.add('highlight');
+        document.body.append(highlight);
+        
+        function highlightLink(){
+            const linkCoords = this.getBoundingClientRect();
+            const coords ={
+                width: linkCoords.width,
+                height: linkCoords.height,
+                top: linkCoords.top + window.scrollY,
+                left: linkCoords.left + window.scrollX,
+            }
+            console.log(linkCoords);
+            //$(this).addClass('highlight');
+            highlight.style.width=`${coords.width}px`;
+            highlight.style.height=`${coords.height}px`;
+            highlight.style.transform=`translate(${coords.left}px,${coords.top}px)`;
+        }
+        links.mouseenter(highlightLink);
+    
+
+
+</script>
+</body>
+</html>
