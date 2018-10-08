@@ -1,50 +1,72 @@
 @charset "UTF-8";
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit;
-  /*Así no hay problemas si lo quiero cambiar*/ }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  /*Así no hay problemas si lo quiero cambiar*/
+}
 
 body {
   margin: 0;
-  background: #dedede; }
+  background: #dedede;
+}
 
 h1 {
   font-family: Merriweather,sans-serif;
-  font-size: 26px; }
+  font-size: 26px;
+}
 
 p {
   font-family: Montserrat,sans-serif;
   font-size: 0.75em;
-  color: #444444; }
+  color: #444444;
+}
 
 li {
-  font-family: Montserrat, sans-serif; }
+  font-family: Montserrat, sans-serif;
+}
 
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
 /*  HEADER  */
 header {
   margin: 0 auto;
   max-width: 900px;
-  /*position:fixed; top:0; width:100%;*/ }
+  /*position:fixed; top:0; width:100%;*/
+}
 
 div.headerTop {
   height: 60px;
   background: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 div.headerTop h1 {
   color: white;
-  margin-left: 10%; }
+  margin-left: 10%;
+}
 
 div.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
   text-decoration: none;
@@ -53,34 +75,43 @@ div.navbar {
   line-height: 35px;
   background: #232323;
   /* Old browsers */
-  background: -moz-linear-gradient(top, black 0%, #222222 98%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, black 0%, #222222 98%);
   /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(98%, #222222));
   background: linear-gradient(to bottom, black 0%, #222222 98%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=0 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+}
 
 div.navbar a {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: white;
   text-decoration: none;
   text-align: center;
   height: 100%;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 div.navbar a:hover {
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
-  background: #444444; }
+  background: #444444;
+}
 
 div.navbar a.activeNav {
   color: orange;
-  border-top: 3px solid orange; }
+  border-top: 3px solid orange;
+}
 
 a.activeNav {
   color: orange;
-  border-top: 3px solid orange; }
+  border-top: 3px solid orange;
+}
 
 /*   CONTENIDO   */
 div.wrapper {
@@ -90,11 +121,12 @@ div.wrapper {
   background-color: white;
   margin: 0 auto;
   -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.5);
+}
 
 img {
-  width: 100%; }
+  width: 100%;
+}
 
 .box {
   background: #aaaaaa;
@@ -102,21 +134,26 @@ img {
   padding: 2%;
   margin: 20px auto;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.29);
-  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.29);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.29);
-  text-indent: 5%; }
+  text-indent: 5%;
+}
 
 .box h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 main.box {
   border-radius: 0px 0px 10px 10px;
   margin-top: 0;
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+}
 
 .box.skills {
-  background-color: orange; }
+  background-color: orange;
+}
 
 div.box.skills a {
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+}
+/*# sourceMappingURL=main.css.map */
