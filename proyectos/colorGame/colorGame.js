@@ -31,7 +31,7 @@ function iniciar(){
                 h1.style.backgroundColor = clickedColor;
                 resetButton.textContent="Jugar de nuevo?";
             } else {
-                this.style.backgroundColor = "steelblue";
+                this.style.backgroundColor = "#232323";
                 messageDisplay.textContent = "Sigue intentando";
             }
         });
