@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .winner {
+        color:green;
+    }
+    </style>
+</head>
+<body>
+    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+
+    <h2>Playing to: <span id="numMax">5</span></h2>
+
+    <input type="number">
+    <button id="p1">Player One</button>
+    <button id="p2">Player Two</button>
+    <button id="reset">Reset</button>
+
+
+    <script>
+    let p1Button = document.querySelector("#p1");
+    let p2Button = document.querySelector("#p2");
+    let resetButton = document.querySelector("reset");
+    let p1Display = document.querySelector("#p1Display");
+    let p2Display = document.querySelector("#p2Display");
+    let p1Score = 0;
+    let p2Score = 0;
+    let numInput = document.querySelector("input[type='number']");
+    let numMax = document.querySelector("#numMax");
+    var gameOver = false;
+    var winningScore = 5;
+
+    p1Button.addEventListener('click',function(){
+        if(!gameOver){
+            p1Score++;
+            if(p1Score === winningScore){
+                gameOver=true;
+                p1Display.classList.add('winner');
+            }
+            p1Display.textContent=p1Score;
+        }
+    });
+    p2Button.addEventListener('click',function(){
+        if(!gameOver){
+            p2Score++;
+            if(p2Score === winningScore){
+                gameOver=true;
+                p2Display.classList.add('winner');
+            }
+            p2Display.textContent=p2Score;
+        }          
+    });
+    function resetear(){
+        p1Score=0;
+        p2Score=0;
+        p1Display.classList.remove('winner');
+        p2Display.classList.remove('winner');
+        p1Display.textContent=p1Score;
+        p2Display.textContent=p2Score;
+        gameOver=false;
+    }
+
+    reset.addEventListener("click", function(){
+        resetear();
+    });
+    
+    numInput.addEventListener("change",function(){
+        winningScore = Number(numInput.value);
+        numMax.textContent= winningScore;
+        resetear();
+    })
+
+    
+    
+    </script>
+</body>
+</html>
