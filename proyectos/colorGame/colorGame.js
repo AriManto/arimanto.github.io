@@ -8,6 +8,7 @@ let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 
+
 function iniciar(){
     //Oyentes de los botones
     for (var i = 0; i < modeButtons.length; i++){
@@ -86,4 +87,3 @@ function randomColor(){
     let b = Math.floor(Math.random() * 256);
     return "rgb(" + r + ", " + g + ", " + b + ")";
 }
-
