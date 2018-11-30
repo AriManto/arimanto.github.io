@@ -10,6 +10,7 @@ h1 {
     background: steelblue;
     font-weight: normal;
     margin:0;
+    margin-top:40px;
     text-transform: uppercase;
     padding:20px 0;
 }

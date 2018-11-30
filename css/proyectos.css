@@ -6,6 +6,7 @@ div.cardwrapper {
       grid-template-columns: 1fr 1fr;
   padding: 0;
   background: transparent;
+  margin-bottom: 10px;
 }
 
 div.cardwrapper h2 {
@@ -14,8 +15,13 @@ div.cardwrapper h2 {
       align-self: center;
 }
 
+div.wrapper {
+  padding: 8px 8px 1px 8px;
+}
+
 main.box {
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
   border-radius: 10px;
   background: #1e5799;
   /* Old browsers */
