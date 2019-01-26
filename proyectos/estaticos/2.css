@@ -3,9 +3,11 @@ html {box-sizing: border-box;}
 body {font-family: 'Chivo', sans-serif;}
 .container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
-
+p {
+    line-height: 190%;
+}
 /* ********************************************** */
 /*      Logo                                    */
 /* ********************************************** */
@@ -26,7 +28,8 @@ body {font-family: 'Chivo', sans-serif;}
 /*      Menu                                    */
 /* ********************************************** */
 
-ul {list-style: none; display: flex;}
+ul {list-style: none; padding-left:0;}
+.menu ul {display: flex;}
 .menu li{flex:1; line-height: 100px; text-align: center;}
 .menu a {text-decoration: none; color: #fff;}
 .active{background: #C0005F}
@@ -50,3 +53,113 @@ ul {list-style: none; display: flex;}
 /* ********************************************** */
 /*      Page                                      */
 /* ********************************************** */
+
+.page.container {
+    display: flex;
+    padding: 96px 20px;
+}
+.sidebar {
+    flex:1;
+    margin-right: 24px;
+}
+.article {
+    flex:2.5;
+}
+.titulo, .sidetitulo {
+    color: #B10058;
+}
+.page a {
+    color: #000; 
+}
+.estilo1 li{
+    border-top:solid 1px #e5e5e5;
+    padding: 10px 24px 10px 0;
+    margin: 0;
+}
+.estilo1 li:first-child{
+    border-top:0;
+}
+
+/* ********************************************** */
+/*      Equipo                                    */
+/* ********************************************** */
+
+#equipo-wrapper {
+    background: #A80154;
+    padding: 96px 0;
+}
+.equipo.container{
+    display: flex;
+    margin: 0 auto;
+}
+.card{
+    flex:1;
+    padding: 0em 20px;
+}
+.foto {
+    width: 250px;
+    height: 170px;
+}
+
+.nombre {
+    color: #fff;
+}
+.bio {
+    color: rgba(255,255,255,.7);
+}
+.leermas {
+    display: block;
+    color: #fff;
+}
+/* ********************************************** */
+/*      Footer                                    */
+/* ********************************************** */
+
+#footer-wrapper {
+    /*height: 475px;*/
+    background: #1E1B1A;
+}
+.footer.container {
+    display: flex;
+    padding: 96px 24px;
+    color: #B1B1B1;
+}
+.footer a {
+    color: #B1B1B1; 
+}
+.footer-title{
+    color: #fff;
+    text-transform: uppercase;
+}
+.footbox {
+    flex:1;
+    margin: 0 24px;
+}
+ul.social {
+    display: flex;
+}
+.estilo2 li{
+    border-top:solid 1px #2D2926;
+    padding: 10px 24px 10px 0;
+    margin: 0;
+    color: #B1B1B1;
+}
+.estilo2 li:first-child{
+    border-top:0;
+}
+
+/* ********************************************** */
+/*      Copyright                                 */
+/* ********************************************** */
+
+#copyright-wrapper {
+    height: 200px;
+    background: #A80154;
+}
+.copyright.container {
+    text-align: center;
+    padding: 5em 0;
+}
+.copyright p {
+    color: rgba(255,255,255,.5);
+}
