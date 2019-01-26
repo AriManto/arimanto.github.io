@@ -154,6 +154,26 @@ h3 {
 /*********************************************************************************/
 /* Copyright                                                                        */
 /*********************************************************************************/
+.fab {
+    padding: 15px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+  }
+/*.fab:hover {
+    color: #666;
+}*/
+.contact li {
+width: 100%;
+}
+.fa-facebook-f {color: white; background: #4267b2;}
+.fa-twitter {color: white; background:#55ACEE;}
+.fa-instagram {color: white; background:#125688;}
+
+/*********************************************************************************/
+/* Copyright                                                                        */
+/*********************************************************************************/
 .copyright {
     height: 180px;
     background: #16a085;
