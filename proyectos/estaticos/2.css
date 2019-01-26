@@ -1,0 +1,52 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit; margin: 0px;}
+body {font-family: 'Chivo', sans-serif;}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* ********************************************** */
+/*      Logo                                    */
+/* ********************************************** */
+
+#logo-wrapper {
+    height: 275px;
+    background: #333;
+}
+.logo.container {
+    text-align: center;
+    padding: 5em;
+    height: 100%;
+}
+.logo h2 {color: #fff; font-size: 3em;}
+.logo p {color: #fff;}
+
+/* ********************************************** */
+/*      Menu                                    */
+/* ********************************************** */
+
+ul {list-style: none; display: flex;}
+.menu li{flex:1; line-height: 100px; text-align: center;}
+.menu a {text-decoration: none; color: #fff;}
+.active{background: #C0005F}
+#menu-wrapper {
+    height: 100px;
+    background: #A80154;
+}
+
+/* ********************************************** */
+/*      Banner                                    */
+/* ********************************************** */
+#banner {
+    background: url('https://images.unsplash.com/photo-1519615146318-276c70e267e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: 70%;
+}
+
+
+/* ********************************************** */
+/*      Page                                      */
+/* ********************************************** */
