@@ -32,6 +32,7 @@ ul {list-style: none; padding-left:0;}
 .menu ul {display: flex;}
 .menu li{flex:1; line-height: 100px; text-align: center;}
 .menu a {text-decoration: none; color: #fff;}
+.menu a:hover {opacity: 0.7;}
 .active{background: #C0005F}
 #menu-wrapper {
     height: 100px;
@@ -60,13 +61,29 @@ ul {list-style: none; padding-left:0;}
 }
 .sidebar {
     flex:1;
-    margin-right: 24px;
+    margin-right: 70px;
 }
 .article {
     flex:2.5;
 }
-.titulo, .sidetitulo {
+.titulo {
     color: #B10058;
+    font-weight: 400;
+    font-size: 2em;
+}
+.sidetitulo {
+    color: #B10058;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.subtitulo {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.90em;
+    color: #6F6F6F;
+    margin-bottom: 32px;
 }
 .page a {
     color: #000; 
@@ -75,6 +92,9 @@ ul {list-style: none; padding-left:0;}
     border-top:solid 1px #e5e5e5;
     padding: 10px 24px 10px 0;
     margin: 0;
+}
+.estilo1 li a:hover, .estilo2 li a:hover {
+    text-decoration: none;
 }
 .estilo1 li:first-child{
     border-top:0;
@@ -99,18 +119,30 @@ ul {list-style: none; padding-left:0;}
 .foto {
     width: 250px;
     height: 170px;
+    margin-bottom: 32px;
 }
 
 .nombre {
     color: #fff;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 32px;
 }
 .bio {
     color: rgba(255,255,255,.7);
 }
 .leermas {
     display: block;
-    color: #fff;
+    color: #fff!important;
+    background: #BB005D; 
+    padding: 20px 20px 20px 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    width: 220px;
+    margin-top: 22px;
 }
+.leermas:hover{opacity: 0.7;}
 /* ********************************************** */
 /*      Footer                                    */
 /* ********************************************** */
@@ -129,7 +161,11 @@ ul {list-style: none; padding-left:0;}
 }
 .footer-title{
     color: #fff;
+    font-weight: 400;
+    font-size: 1.2em;
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 32px;
 }
 .footbox {
     flex:1;
@@ -137,6 +173,7 @@ ul {list-style: none; padding-left:0;}
 }
 ul.social {
     display: flex;
+    margin: 32px auto;
 }
 .estilo2 li{
     border-top:solid 1px #2D2926;
@@ -147,7 +184,18 @@ ul.social {
 .estilo2 li:first-child{
     border-top:0;
 }
-
+.social i {
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    padding: 13px;
+    margin: 0 10px;
+    border-radius: 100px;
+}
+.social i:hover {opacity: 0.7;}
+.fa-facebook-f {color: white; background: #4267b2;}
+.fa-twitter {color: white; background:#55ACEE;}
+.fa-instagram {color: white; background:#125688;}
 /* ********************************************** */
 /*      Copyright                                 */
 /* ********************************************** */
@@ -162,4 +210,5 @@ ul.social {
 }
 .copyright p {
     color: rgba(255,255,255,.5);
+    letter-spacing: 2px;
 }
