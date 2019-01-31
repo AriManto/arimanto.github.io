@@ -1,0 +1,74 @@
+html {box-sizing: border-box; font-family: 'Lato', sans-serif;}
+*, *:before, *:after {box-sizing: inherit; margin: 0px;}
+.container {width: 1200px; margin: 0 auto;}
+.boton, #menu .active {color: #fff; background: #323338; border-radius:4px;
+    display: inline-block; padding: 1em 1.5em; text-decoration: none;
+    text-transform: uppercase; font-weight: 200; letter-spacing: 1px;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+li a:hover {text-decoration: underline;}
+
+/***********************************************************/
+/*      Banner - Logo                                      */
+/***********************************************************/
+#banner-wrapper {background: url('https://images.unsplash.com/photo-1497372634363-f4c943c5e485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover; background-position-y: 40%;  
+    padding: 160px 5px; 
+    height: 530px; 
+}
+#logo {text-align: center; margin-bottom: 48px;}
+h2 {display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 900;
+    color: #323338;
+}
+#logo span {display: block;
+    padding-top: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #8e8588;}
+
+
+/***********************************************************/
+/*      Banner - Menu                                      */
+/***********************************************************/
+#menu {display: flex; text-transform: uppercase;}
+#menu li a{color: #000; display: inline-block; padding: 15px 15px;}
+#menu li a:hover {text-decoration: none; color: #fff;}
+
+
+/***********************************************************/
+/*      Page                                               */
+/***********************************************************/
+h3 {line-height: 1.2em; font-size: 3em; letter-spacing: -2px;
+    text-transform: uppercase; font-weight: 900; color: #323338;
+    margin-bottom: 32px}
+h4 {letter-spacing: -2px; text-transform: uppercase; 
+    font-weight: 900; font-size: 2em; color: #323338;
+    margin-bottom: 40px;}
+.page.container {display:flex; margin-top: 48px;}
+#page1{flex:1;}
+#page2{flex:2;}
+#page3{flex:1;}
+
+/***********************************************************/
+/*      Footer                                             */
+/***********************************************************/
+#footer-wrapper {background: #f3f2ed; padding: 70px 0; border-bottom: 1px solid rgb(138,138,138);
+    color: #8A8A8A;}
+.footer.container {display:flex;}
+#footer1{flex:1;}
+#footer2{flex:2;}
+#footer3{flex:1;}
+
+
+
+/***********************************************************/
+/*      Copyright                                          */
+/***********************************************************/
+#copyright-wrapper {background: #f3f2ed; text-align: center; padding: 48px 0; color: #8A8A8A;}
