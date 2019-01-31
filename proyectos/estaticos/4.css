@@ -1,3 +1,72 @@
 html {box-sizing: border-box; font-family: 'Didact Gothic', sans-serif;}
 *, *:before, *:after {box-sizing: inherit; margin: 0px;}
-body {background: #111111;}
+body {background: #111111; text-align: center;}
+.container {width: 1200px; margin: 0 auto;}
+#banner-wrapper {
+    background: url(https://templated.co/items/demos/stonework/images/header-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    padding-bottom:110px; 
+}
+/*********************************************************/
+/*     Header                                            */
+/*********************************************************/
+.header.container {display: flex; padding-top: 80px; padding-bottom: 110px;}
+.logo {text-align: left; font-size: 1.5em;}
+.menu {display: inline-block; list-style: none; text-transform: uppercase; 
+    width: 100%; text-align: right; letter-spacing: 1px;
+}
+.menu li {padding: 10px 15px; display: inline-block;}
+.menu .active {border: 2px solid white; border-radius: 6px;}
+.menu a {text-decoration: none; color: #fff;}
+a:hover{opacity: 0.6;}
+
+/*********************************************************/
+/*     Landing                                           */
+/*********************************************************/
+.landing.container {padding-top: 160px;}
+.intro {margin-bottom: 48px;}
+.intro h2 {font-size: 64px; display:  block; font-weight:700;}
+.intro span {color: rgba(255,255,255,0.60); font-size: 2em; font-weight: 200;}
+a.cta {border: 2px solid white; border-radius: 6px; margin-top: 32px; padding: 20px 40px;
+    color: #fff; text-decoration: none; font-weight: 700; display: inline-block; font-size: 1.2em;
+}
+
+/*********************************************************/
+/*     Page                                              */
+/*********************************************************/
+#page-wrapper {background: #fff; padding: 80px 5px 112px 5px;}
+
+.titulo {margin-bottom: 48px;}
+.titulo h2 {font-weight: 700; color: rgba(0,0,0,0.8); font-size: 2.7em;}
+.titulo span {color: rgba(0,0,0,0.5); font-size: 1.3em; font-weight: 200;}
+
+/*********************************************************/
+/*     Boxes                                             */
+/*********************************************************/
+.boxes {display: flex;}
+.box {display: inline-block; flex:1; width: 30%;}
+.box i {padding: 32px 0; font-size: 40px;}
+.box p {line-height: 180%; color: rgba(0,0,0,0.6); font-size: 12pt;
+    font-weight: 200; display: block; margin-bottom: 16px;
+}
+.boxinfo {display: inline-block; border: 2px solid black; padding: 16px 32px; 
+    border-radius: 6px; color: #000; text-decoration: none; 
+    font-weight: 700; font-size: 18px; letter-spacing: 1.8px; margin-top: 32px;
+}
+
+
+/*********************************************************/
+/*     Footer                                            */
+/*********************************************************/
+.footer.container {padding: 112px 5px;}
+.footer .titulo h2 {color: rgba(255,255,255,0.8);}
+.footer .titulo span {color: rgba(255,255,255,0.60);}
+.footer p {line-height: 180%; color: rgba(255,255,255,0.8); margin-bottom: 16px; 
+}
+
+/*********************************************************/
+/*     Copyright                                         */
+/*********************************************************/
+.copyright.container {padding: 80px 0;}
+.copyright p {color:  rgba(255,255,255,0.3); margin-bottom: 16px;}
