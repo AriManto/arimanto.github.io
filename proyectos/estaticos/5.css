@@ -2,19 +2,23 @@ html {box-sizing: border-box; font-family: 'Lato', sans-serif;}
 *, *:before, *:after {box-sizing: inherit; margin: 0px;}
 .container {width: 1200px; margin: 0 auto;}
 .boton, #menu .active {color: #fff; background: #323338; border-radius:4px;
-    display: inline-block; padding: 1em 1.5em; text-decoration: none;
+    display: inline-block; padding: 14px 14px; text-decoration: none; margin-bottom: 20px;
     text-transform: uppercase; font-weight: 200; letter-spacing: 1px;
 }
-ul {list-style: none;}
-a {text-decoration: none;}
+ul {list-style: none; padding-left: 0;}
+a {text-decoration: none; color: #525252; font-weight: 300;;}
 li a:hover {text-decoration: underline;}
 
 /***********************************************************/
 /*      Banner - Logo                                      */
 /***********************************************************/
-#banner-wrapper {background: url('https://images.unsplash.com/photo-1497372634363-f4c943c5e485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover; background-position-y: 40%;  
-    padding: 160px 5px; 
+#banner-wrapper {background: rgb(246,230,180); /* Old browsers */
+    background: rgb(237,144,23); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(237,144,23,1) 0%, rgba(246,230,180,1) 74%, rgba(246,230,180,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(237,144,23,1) 0%,rgba(246,230,180,1) 74%,rgba(246,230,180,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(237,144,23,1) 0%,rgba(246,230,180,1) 74%,rgba(246,230,180,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9017', endColorstr='#f6e6b4',GradientType=0 ); /* IE6-9 */
+        padding: 160px 5px; 
     height: 530px; 
 }
 #logo {text-align: center; margin-bottom: 48px;}
@@ -37,9 +41,9 @@ h2 {display: block;
 /***********************************************************/
 /*      Banner - Menu                                      */
 /***********************************************************/
-#menu {display: flex; text-transform: uppercase;}
+#menu {display: flex; text-transform: uppercase; justify-content: center;}
 #menu li a{color: #000; display: inline-block; padding: 15px 15px;}
-#menu li a:hover {text-decoration: none; color: #fff;}
+#menu li a:hover {text-decoration: none; color: rgb(219, 124, 0);}
 
 
 /***********************************************************/
@@ -51,24 +55,40 @@ h3 {line-height: 1.2em; font-size: 3em; letter-spacing: -2px;
 h4 {letter-spacing: -2px; text-transform: uppercase; 
     font-weight: 900; font-size: 2em; color: #323338;
     margin-bottom: 40px;}
-.page.container {display:flex; margin-top: 48px;}
+.page.container {display:flex; margin-top: 70px; padding-bottom: 70px;}
+.page.container div {padding: 0 20px;}
+.lista a {display: inline-block;}
 #page1{flex:1;}
 #page2{flex:2;}
 #page3{flex:1;}
 
+.lista li {padding: 25px 0; border-bottom: 1px solid rgba(138,138,138,0.2);
+    font-weight: 300; color: rgb(138,138,138);}
+.lista li:first-child {padding-top: 0;}
+.lista li:last-child {border-bottom: none;}
+
+
+
+#page2 p, #footer2 p {margin-bottom: 1.5em;
+    line-height: 180%; font-weight: 300; color: rgb(138,138,138);
+}
+
 /***********************************************************/
 /*      Footer                                             */
 /***********************************************************/
-#footer-wrapper {background: #f3f2ed; padding: 70px 0; border-bottom: 1px solid rgb(138,138,138);
-    color: #8A8A8A;}
-.footer.container {display:flex;}
+#footer-wrapper {background: #f3f2ed; padding: 70px 0; color: #8A8A8A;}
+.footer.container {display:flex; }
+.footer.container div {padding: 0 20px;}
 #footer1{flex:1;}
 #footer2{flex:2;}
 #footer3{flex:1;}
-
+.footer img {margin-bottom: 32px;}
 
 
 /***********************************************************/
 /*      Copyright                                          */
 /***********************************************************/
-#copyright-wrapper {background: #f3f2ed; text-align: center; padding: 48px 0; color: #8A8A8A;}
+#copyright-wrapper {background: #f3f2ed; text-align: center;; 
+    color: #8A8A8A;}
+.copyright.container { border-top: 1px solid rgba(138,138,138, 0.5); padding: 48px 0;
+width: 1160px;}
