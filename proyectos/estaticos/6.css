@@ -1,3 +1,80 @@
-html {box-sizing: border-box; font-family: 'Lato', sans-serif;}
+html {box-sizing: border-box; font-family: 'Questrial', sans-serif;}
 *, *:before, *:after {box-sizing: inherit; margin: 0px;}
 .container {width: 1200px; margin: 0 auto;}
+/*********************************/
+/*      Header                   */
+/*********************************/
+#header-wrapper {height: 90px; background: rgb(219,59,93);}
+#logo {display: flex;}
+#logo h2 {display: inline-block; flex:1; line-height: 90px; font-weight: 400; 
+    font-size: 36px; text-transform: uppercase; color: #fff;}
+#logo span {display: inline-block; flex:1; line-height: 90px; text-align: right;}
+
+
+/*********************************/
+/*      Menu                     */
+/*********************************/
+#menu-wrapper {height: 90px; background: rgb(248, 239, 207);}
+.menu ul {display: flex; list-style: none; line-height: 90px; padding: 0 100px;}
+.menu li {flex:1; text-align: center;}
+.menu li a { text-decoration: none; flex:1; color: #db3b5d; text-transform: uppercase;
+    padding: 12px 22px; letter-spacing: 1px;}
+.menu .active {color: #fff; background: rgb(219,59,93);border-radius: 50px;}
+.menu a:hover {color: #444;}
+#banner {background: url("https://templated.co/items/demos/colorized/images/banner.jpg") center;
+    background-size: cover; height: 440px;
+}
+
+/*********************************/
+/*      Main                     */
+/*********************************/
+.main.container {padding: 80px 0;}
+p {line-height: 26px;}
+
+
+/*********************************/
+/*      Main - Featured          */
+/*********************************/
+.featured {display: flex;}
+.featured .box {flex:1; padding-bottom: 80px; padding-left: 50px; width: 22%;}
+.box img {width: 100%; margin-bottom: 30px;}
+.b1 {margin-left: -50px;}
+
+
+/*********************************/
+/*      Main - Content           */
+/*********************************/
+.content {display: flex;}
+.articulo {flex: 2;  text-indent: 30px;}
+.sidebar {flex: 1;}
+h3 {font-size: 40px; font-weight: 400; margin-bottom: 30px; text-indent: 0;}
+.sidebar h4 {font-size: 26px; margin-bottom: 15px;}
+.sidebar li {padding: 15px 0;}
+.sidebar a {color: #db3b5d;}
+
+
+/*********************************/
+/*      Main - Sidebar           */
+/*********************************/
+
+
+
+/*********************************/
+/*      Footer                   */
+/*********************************/
+#footer-wrapper {background: rgb(44,44,44);}
+.footer {display: flex; padding: 80px 0; color: #fff;}
+.footer p {opacity: 0.4;}
+.footer img {width: 100%;}
+
+
+/*********************************/
+/*      Copyright                */
+/*********************************/
+#copyright-wrapper {background: rgb(22,22,22); color: rgba(255,255,255,.3);}
+
+
+
+
+
+
