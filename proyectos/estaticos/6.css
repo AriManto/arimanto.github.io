@@ -4,11 +4,14 @@ html {box-sizing: border-box; font-family: 'Questrial', sans-serif;}
 /*********************************/
 /*      Header                   */
 /*********************************/
-#header-wrapper {height: 90px; background: rgb(219,59,93);}
+#header-wrapper {height: 90px; 
+    background: url('https://templated.co/items/demos/colorized/css/images/overlay.png') rgb(219,59,93) repeat;}
 #logo {display: flex;}
 #logo h2 {display: inline-block; flex:1; line-height: 90px; font-weight: 400; 
     font-size: 36px; text-transform: uppercase; color: #fff;}
-#logo span {display: inline-block; flex:1; line-height: 90px; text-align: right;}
+#logo span {display: inline-block; flex:1; line-height: 90px; text-align: right; color: rgba(255,255,255,0.8);}
+li {list-style: none;}
+a:hover{text-decoration: none;}
 
 
 /*********************************/
@@ -30,7 +33,10 @@ html {box-sizing: border-box; font-family: 'Questrial', sans-serif;}
 /*********************************/
 .main.container {padding: 80px 0;}
 p {line-height: 26px;}
-
+.separador { background: url('https://templated.co/items/demos/colorized/css/images/divider.png') repeat;
+    height: 15px; margin-bottom: 80px;
+}
+.fa-angle-right {margin-right: 5px;}
 
 /*********************************/
 /*      Main - Featured          */
@@ -45,34 +51,39 @@ p {line-height: 26px;}
 /*      Main - Content           */
 /*********************************/
 .content {display: flex;}
-.articulo {flex: 2;  text-indent: 30px;}
-.sidebar {flex: 1;}
+.content div {padding-left: 50px;}
+.articulo {flex: 2;  text-indent: 30px; margin-left: -50px;}
 h3 {font-size: 40px; font-weight: 400; margin-bottom: 30px; text-indent: 0;}
-.sidebar h4 {font-size: 26px; margin-bottom: 15px;}
-.sidebar li {padding: 15px 0;}
-.sidebar a {color: #db3b5d;}
-
 
 /*********************************/
 /*      Main - Sidebar           */
 /*********************************/
-
+.sidebar {flex: 1;}
+.sidebar h4 {font-size: 26px; margin-bottom: 15px; font-weight: 400;}
+.sidebar ul {padding-left: 0;}
+.sidebar li {padding: 15px 0;}
+.main a, .footer a {color: #db3b5d;}
+.main li {border-bottom: 1px rgba(0,0,0,0.1) solid;}
+.main li:nth-last-of-type(1){border:none;}
 
 
 /*********************************/
 /*      Footer                   */
 /*********************************/
-#footer-wrapper {background: rgb(44,44,44);}
+#footer-wrapper {background: url('https://templated.co/items/demos/colorized/css/images/overlay.png') rgb(44,44,44);}
 .footer {display: flex; padding: 80px 0; color: #fff;}
+.footer div {padding-left: 50px;}
 .footer p {opacity: 0.4;}
-.footer img {width: 100%;}
+.footer img {width: 100%; margin-bottom: 30px;}
+.footer li {border-bottom: 1px rgba(255,255,255,0.1) solid;}
+.footer li:nth-last-of-type(1){border:none;}
 
 
 /*********************************/
 /*      Copyright                */
 /*********************************/
-#copyright-wrapper {background: rgb(22,22,22); color: rgba(255,255,255,.3);}
-
+#copyright-wrapper {background: url('https://templated.co/items/demos/colorized/css/images/overlay.png') rgb(22,22,22); color: rgba(255,255,255,.3);}
+.copyright {padding: 44px 0; text-align: center;}
 
 
 
