@@ -1,0 +1,21 @@
+html {box-sizing: border-box; font-family: 'Pontano Sans', sans-serif;}
+*, *:before, *:after {box-sizing: inherit; margin: 0px;}
+.container {width: 1200px; margin: 0 auto;}
+body {background: rgb(215, 212, 195);}
+
+.menu.container {background: #4C4532; display: flex;}
+.menu ul {display: flex; list-style: none; width: 100%;}
+.menu li {padding: 15px 20px;}
+.menu a {color: #fff; text-decoration: none;}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.card {margin: 25px; }
+.card img {width: 100%;}
+.card p {padding: 20px;}
+.boton {padding: 10px 15px; background: #4C4532; 
+    color: #fff; text-decoration: none; display: inline-block;
+}
+.card-wrapper {background: #F0EFE9;}
