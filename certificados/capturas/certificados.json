@@ -1,50 +1,56 @@
 [
     {
+        "titulo":"Javascript Desarrollador Avanzado Front-end",
+        "institucion":"EducaciónIT",
+        "imgsrc":"EducacionIT_JavascriptAvanzado.jpg",
+        "url":"https://api.alumni.education/course/calendar/diploma/get?format=html&code=35877T1HJ0A8U45WW10GE4J8Y782D4PV"
+    },
+    {
         "titulo":"Introducción a la Programación con C# .NET",
-        "institucion":"EducacionIT",
-        "imgsrc":"/EducacionIT_Csharp.jpg",
-        "url":"https://alumni.education/user/diploma/codigo_diplo/213533/id_diploma/35872AS76Y86RUATKF31AZ065RE2NBDP/"
+        "institucion":"EducaciónIT",
+        "imgsrc":"EducacionIT_Csharp.jpg",
+        "url":"https://api.alumni.education/course/calendar/diploma/get?format=html&code=35872AS76Y86RUATKF31AZ065RE2NBDP"
     },
     {
         "titulo":"Maquetación Web: HTML5 y CSS",
-        "institucion":"EducacionIT",
-        "imgsrc":"/EducacionIT_CSSHTML.jpg",
-        "url":"https://alumni.education/user/diploma/codigo_diplo/213976/id_diploma/358746SR8N00PN4J4H0F32DEEOKQ90H9/"
+        "institucion":"EducaciónIT",
+        "imgsrc":"EducacionIT_CSSHTML.jpg",
+        "url":"https://api.alumni.education/course/calendar/diploma/get?format=html&code=358746SR8N00PN4J4H0F32DEEOKQ90H9"
     },
     {
         "titulo":"HTML5: Fundamentos de una pagina Web",
-        "institucion":"EducacionIT",
-        "imgsrc":"/EducacionIT_HTML5.jpg",
-        "url":"https://alumni.education/user/diploma/codigo_diplo/215186/id_diploma/353843L0J24LW07I5GV8X0L00GW0EQ50/"
+        "institucion":"EducaciónIT",
+        "imgsrc":"EducacionIT_HTML5.jpg",
+        "url":"https://api.alumni.education/course/calendar/diploma/get?format=html&code=353843L0J24LW07I5GV8X0L00GW0EQ50"
     },
     {
         "titulo":"Fundamentos de Programación con SQL Server 2017",
-        "institucion":"EducacionIT",
-        "imgsrc":"/EducacionIT_SQLserver.jpg",
-        "url":"https://alumni.education/user/diploma/codigo_diplo/213730/id_diploma/35876ZO55WQN7A7157ZT5D6ILW946242/"
+        "institucion":"EducaciónIT",
+        "imgsrc":"EducacionIT_SQLserver.jpg",
+        "url":"https://api.alumni.education/course/calendar/diploma/get?format=html&code=35876ZO55WQN7A7157ZT5D6ILW946242"
     },
     {
         "titulo":"Java Database Connection: JDBC and MySQL",
         "institucion":"Udemy",
-        "imgsrc":"/Udemy_JDBC-MySQL.jpg",
+        "imgsrc":"Udemy_JDBC-MySQL.jpg",
         "url":"https://www.udemy.com/certificate/UC-MKXRXXJF/"
     },
     {
         "titulo":"Java Tutorial for Complete Beginners",
         "institucion":"Udemy",
-        "imgsrc":"/Udemy_Java_JohnPurcell.jpg",
+        "imgsrc":"Udemy_Java_JohnPurcell.jpg",
         "url":"https://www.udemy.com/certificate/UC-DX5BZ6BD/"
     },
     {
         "titulo":"Learn HTML5 & CSS3 From Scratch - Make Responsive Websites",
         "institucion":"Udemy",
-        "imgsrc":"/Udemy_HTML5CSS3FromScratch.jpg",
+        "imgsrc":"Udemy_HTML5CSS3FromScratch.jpg",
         "url":"https://www.udemy.com/certificate/UC-ADLKDEZE/"
     },
     {
         "titulo":"Build Your First Website In 1 Week with HTML5 and CSS3",
         "institucion":"Udemy",
-        "imgsrc":"/Udemy_CSS3_RyanBonhardt.jpg",
+        "imgsrc":"Udemy_CSS3_RyanBonhardt.jpg",
         "url":"https://www.udemy.com/certificate/UC-5H1PA6H1/"
     }
 ]

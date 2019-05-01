@@ -16,7 +16,7 @@ xhr.onload = function(){
                     '</div>'+
                     '<div class="icono"><i class="material-icons">expand_more</i></div>'+
                 '</div>'+
-                '<img src="capturas'+res[i].imgsrc+'">'+
+                '<img src="capturas/'+res[i].imgsrc+'">'+
             '</li>';          
         }
     }
