@@ -61,7 +61,7 @@ li p {
     max-height: 0;
     transition: max-height 0.5s ease-in-out,
                 z-index 0.5s ease-in-out,
-                visibility 0.35s;
+                visibility 0.42s;
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
@@ -76,7 +76,7 @@ li p {
     visibility: visible;
     padding: 8px;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     z-index: 20;
 }
 
