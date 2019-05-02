@@ -1,9 +1,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #BBBBBB;
-    background-image: linear-gradient( rgb(0, 19, 58),rgb(24, 113, 255));
+    background-image: linear-gradient( rgb(24, 113, 255), rgb(0, 19, 58));
+    /**/
+    /* background: #DDD; */
     min-height: 100vh;
-    /* height: 100%; */
 }
 ul {
     display: flex;
@@ -12,28 +12,37 @@ ul {
     justify-content: space-evenly;
     padding: 10px;
 }
-h2 {text-align: center; color:white; margin-top: 80px;}
+h2 {
+    text-align: center; 
+    color:white;
+    margin-top: 80px;
+}
 
 .container li {
     box-sizing: border-box;
     position: relative;
     margin: 20px;
-    padding: 20px;
+    padding: 0;
     list-style: none;
     color: black;
-    border-radius: 5px;
     width: 46%;
     height: 100%;
     line-height: 100%;
     cursor: pointer;
-    background: white;
 }
-
+.panel {
+    border: black 2px solid;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 20px 28px 20px;
+    /* height: 100%; */
+}
 .container a { 
     color: blue;
     font-weight: 700;
     font-size: 1.2em;
     text-decoration: none;
+    line-height: 1.2em;
 }
 .container a:hover { 
     border-bottom: 2px blue solid;
@@ -44,31 +53,27 @@ li p {
     font-style: italic;
 }
 
-
 .toggle img {
-    top: 95%;
+    top: 90%;
+    visibility: hidden;
     position: absolute;
-    margin-left: -20px;
-    margin-right: -10px;
     z-index: 0;
     max-height: 0;
     transition: max-height 0.5s ease-in-out,
                 z-index 0.5s ease-in-out,
-                padding 0.2s ease-in-out;
-    display: block;
-    /* margin: 10px auto 0 auto; */
+                visibility 0.35s;
     width: 100%;
     box-sizing: border-box;
-    padding: 0px;
-    background: #888;
+    padding: 8px;
+    background-color: #999;
+    border: 2px solid black;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    /* border: 2px solid black; */
     border-top: none;
-    /* padding: 20px; */
 }
 
 .toggle.active img{
+    visibility: visible;
     padding: 8px;
     height: auto;
     max-height: 500px;
