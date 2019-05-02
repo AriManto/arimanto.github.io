@@ -16,28 +16,14 @@ xhr.onload = function(){
                     '</div>'+
                     '<div class="icono"><i class="material-icons">expand_more</i></div>'+
                 '</div>'+
-                '<div class="img"><img src="capturas/'+res[i].imgsrc+'"></div>'+
+                '<img src="capturas/'+res[i].imgsrc+'">'+
             '</li>';          
         }
     }
     let paneles = document.querySelectorAll('.toggle');
-    function resetearPaneles(){
-        paneles.forEach(panel => {
-            panel.classList.remove('active');
-        })
-    }
     paneles.forEach(panel => {
         panel.addEventListener('click', function(){
-            if (panel.classList.value.includes('active')){
-                resetearPaneles();
-            }
-            else {
-                resetearPaneles();
-                panel.classList.toggle('active');
-            }
-
-
-
+            panel.classList.toggle('active');
             //Toggle del icono
             let icono = panel.children[0].children[1];
             if (icono.innerHTML == '<i class="material-icons">expand_more</i>'){
