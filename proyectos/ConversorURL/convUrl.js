@@ -42,12 +42,12 @@ xhr.send();
 
 boton.addEventListener('click', function(e){
     e.preventDefault();
-    output.innerText = convertirURL(input);
+    output.value = convertirURL(input);
     console.log(
         "Input: "+
         input.value+
         "\nOutput: "+
-        output.innerText);
+        output.value);
 });
 
 function convertirURL(input){
@@ -63,11 +63,8 @@ function convertirURL(input){
     return inputConvertido;
 }
 
-/*
-Ejemplo
-sharer.php?u=https%3A%2F%2Fapi.alumni.education%2Fcourse%2Fcalendar%2Fdiploma%2Fget%3Fformat%3Dhtml%26code%3D35877T1HJ0A8U45WW10GE4J8Y782D4PV
-
-
-
-https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fapi.alumni.education%2Fcourse%2Fcalendar%2Fdiploma%2Fget%3Fformat%3Dhtml%26code%3D35877T1HJ0A8U45WW10GE4J8Y782D4PV
-*/
+let botonCopiar = document.querySelector('.botonCopiar');
+botonCopiar.addEventListener('click', function(){
+    output.select();
+    document.execCommand("copy");
+})

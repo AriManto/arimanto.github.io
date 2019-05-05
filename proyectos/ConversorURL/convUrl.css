@@ -11,29 +11,60 @@ body {font-family: 'Montserrat', sans-serif;}
     border-radius: 8px;
     margin-bottom: 25px;
 }
-form {
-    margin: 0 auto;
-}
-form * {
+
+form input, form button {
     box-sizing: border-box;
     display: block;
     width: 100%;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-}
-button {
-    width: 250px;
-    margin: 0 auto;
-    padding: 15px;
+    margin-bottom: 10px;
 }
 .output {
     border: 1px grey solid; 
     background-color: rgb(255, 226, 122);
-    overflow-x: auto;
 }
+
+.botones {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+form button {
+    flex:1;
+    max-width: 250px;
+    margin-right: 80px;
+    margin-bottom: 0;
+    /* align-self: stretch; */
+}
+.botonCopiar {
+    flex:1;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: rgb(253, 216, 81);
+    border: rgba(0,0,0,0.2) 1px solid;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.botonCopiar i {
+    padding: 10px 0;
+}
+.botonCopiar:hover {
+    cursor:pointer; 
+    color: white;
+    background-color: rgb(124, 1, 1);
+}
+.botones div {
+    box-sizing: border-box;
+    padding: 0px 10px; 
+    display: inline-block;
+}
+
 h1 {
-    text-align: center; margin-bottom: 70px;
+    text-align: center;
+    margin-bottom: 70px;
 }
 a {
     text-decoration: none;

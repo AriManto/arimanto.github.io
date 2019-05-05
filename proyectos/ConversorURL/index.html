@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Conversor de URL | Ariel Manto</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="convUrl.css">
 </head>
 <body>
@@ -14,8 +15,15 @@
             <h1>Conversor de URL</h1>
             <form>
                 <input type="text" name="input" placeholder="URL Encoded">
-                <p class="output">URL Normal</p>
-                <button>Convertir</button>
+                <input type="text" class="output" value="URL Normal">
+                <div class="botones">
+                    <button>Convertir</button>
+                    <div>
+                        <div class="botonCopiar">
+                            <i class="material-icons">content_copy</i>
+                        </div>
+                        <div><p>Copiar al portapapeles</p></div>
+                </div>
             </form>
         </div>
         <h3>Explicación</h3>
