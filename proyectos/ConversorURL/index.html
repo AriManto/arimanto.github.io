@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de URL | Ariel Manto</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="convUrl.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Conversor de URL</h1>
+            <form>
+                <input type="text" name="input" placeholder="URL Encoded">
+                <p class="output">URL Normal</p>
+                <button>Convertir</button>
+            </form>
+        </div>
+        <h3>Explicación</h3>
+        <p>En ocasiones los caracteres de una URL deben ser "encodeados" en formato ASCII para evitar que el
+            programa lo entienda como una instrucción, o que recorte la URL en vez de tomarla completa. Por ejemplo, un espacio
+            en las URL se puede indicar con un '%20', '+' como '%2B', '@' como '%40', etc.</p>
+            <p>Esta herramienta traduce el código ASCII a su respectivo valor y devuelve una URL normal.</p>
+        <h3>Ejemplo</h3>
+        <ul>
+            <li><p>URL encoded:</p><p>https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FGuide%2FControl%5Fflow%5Fand%5Ferror%5Fhandling</p></li>
+            <li><p>URL normal:</p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling</a></p></li>
+        </ul>
+        <a href="https://www.w3schools.com/tags/ref_urlencode.asp" class="ref">(Para ver la referencia completa de los caracteres ASCII, click acá)</a>
+        
+
+    </div>
+    <script src="convUrl.js"></script>
+</body>
+</html>

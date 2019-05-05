@@ -3,21 +3,19 @@ let repos = document.querySelector(".repos");
 let xhr = new XMLHttpRequest();
 
 //Info perfil
-window.addEventListener('load', function(){
-    xhr.open('GET', 'https://api.github.com/users/AriManto', true)
-    xhr.onreadystatechange = function (){
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            let perfData = JSON.parse(xhr.response);           
-            perfil.innerHTML = "<img src='"+perfData.avatar_url+"' height=150 width=150>"+
-                "<h2><a href='"+perfData.html_url+"' target='_blank'>"+perfData.name+"</a></h2>"+
-                "<p class='githubUrl'><a href='"+perfData.html_url+"' target='_blank'>"+perfData.html_url+"</a></p>"+
-                "<p class='bio'>"+perfData.bio+"</p>"+
-                "<p class='contRepo'> Repositorios: "+perfData.public_repos+"</p>"
-            ;
-        }
+xhr.open('GET', 'https://api.github.com/users/AriManto', true)
+xhr.onreadystatechange = function (){
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        let perfData = JSON.parse(xhr.response);           
+        perfil.innerHTML = "<img src='"+perfData.avatar_url+"' height=150 width=150>"+
+            "<h2><a href='"+perfData.html_url+"' target='_blank'>"+perfData.name+"</a></h2>"+
+            "<p class='githubUrl'><a href='"+perfData.html_url+"' target='_blank'>"+perfData.html_url+"</a></p>"+
+            "<p class='bio'>"+perfData.bio+"</p>"+
+            "<p class='contRepo'> Repositorios: "+perfData.public_repos+"</p>"
+        ;
     }
-    xhr.send();
-})
+}
+xhr.send();
 
 //Info repos
 //created at? updated at?

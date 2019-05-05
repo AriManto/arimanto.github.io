@@ -1,0 +1,44 @@
+body {font-family: 'Montserrat', sans-serif;}
+.container {
+    padding: 50px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wrapper {
+    border: 2px grey solid;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+form {
+    margin: 0 auto;
+}
+form * {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+button {
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.output {
+    border: 1px grey solid; 
+    background-color: rgb(255, 226, 122);
+    overflow-x: auto;
+}
+h1 {
+    text-align: center; margin-bottom: 70px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border-bottom: 1px solid black;
+}
