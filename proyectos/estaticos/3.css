@@ -1,6 +1,6 @@
 html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 *, *:before, *:after {box-sizing: inherit; margin: 0px;}
-.container {width: 1200px; margin: 0 auto;}
+.container {width: 1200px; margin: 0 auto; padding: 0 30px;}
 /******************************************/
 /*    MENU                                */
 /******************************************/
@@ -24,6 +24,7 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
     list-style: none;
     color: #fff;
     display: flex;
+    flex-wrap: wrap;
 }
 .menu a {
     text-decoration: none;
@@ -42,7 +43,7 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 /******************************************/
 /*    BANNER                              */
 /******************************************/
-.landing.container{padding: 150px 0; margin: 0 auto; text-align: center;}
+.landing.container{padding: 150px 80px; margin: 0 auto; text-align: center;}
 #empresa h2{font-size: 66px; color: #fff; text-align: center; font-weight: 400; padding-bottom: 33px;}
 .descripcion {font-size: 22px; font-weight: 300; line-height: 40px; color: rgba(255,255,255,.7);}
 .cta{display: inline-block; text-decoration: none; color: white; background: #1757ae; 
@@ -58,20 +59,20 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 
 .page {
     display: flex;
-    padding: 88px 5px;
+    flex-wrap: wrap;
+    padding: 88px;
 }
-.page div {flex:1;}
+.articulo{flex: 1 50%; margin-right: 60px;}
 .titulo h3 {font-weight: 400; font-size: 2.8em; color: #323232;}
 .titulo span {text-transform: uppercase; font-weight: 400; font-size: 1.1em; 
     color: #6F6F6F; letter-spacing: 0.15em;}
 #imagen {width: 700px; margin-top: 30px;}
-.articulo{margin-right: 40px;}
 .articulo p {line-height: 180%; color: #6c6c6c; font-size: 11pt; font-weight: 300; margin-top: 30px;}
 
 /******************************************/
 /*    SIDEBAR                             */
 /******************************************/
-.sidebar {flex:1;}
+.sidebar {flex:1 15%;}
 .box h4 , .listas h4{padding: 1.2em 0em 1em 0em;
     letter-spacing: 0.10em;
     text-transform: uppercase;
@@ -96,3 +97,21 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 /*    COPYRIGHT                           */
 /******************************************/
 #copyright-wrapper {background: #2b2b2b; text-align: center; padding: 88px 0; color: #6c6c6c;}
+
+@media (max-width:1200px){
+    #imagen {
+        width: 100%;
+    }
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width:870px){
+    .menu ul {
+        display: none;
+    }
+    .menu a {
+        padding: 15px 10px;
+    }
+}

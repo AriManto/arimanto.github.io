@@ -1,7 +1,7 @@
 html {box-sizing: border-box; font-family: 'Didact Gothic', sans-serif;}
 *, *:before, *:after {box-sizing: inherit; margin: 0px;}
 body {background: #111111; text-align: center;}
-.container {width: 1200px; margin: 0 auto;}
+.container {max-width: 1200px; margin: 0 auto; padding: 0 30px;}
 #banner-wrapper {
     background: url(https://templated.co/items/demos/stonework/images/header-bg.jpg);
     background-size: cover;
@@ -59,7 +59,7 @@ a.cta {border: 2px solid white; border-radius: 6px; margin-top: 32px; padding: 2
 /*********************************************************/
 /*     Footer                                            */
 /*********************************************************/
-.footer.container {padding: 112px 5px;}
+.footer.container {padding: 112px 60px;}
 .footer .titulo h2 {color: rgba(255,255,255,0.8);}
 .footer .titulo span {color: rgba(255,255,255,0.60);}
 .footer p {line-height: 180%; color: rgba(255,255,255,0.8); margin-bottom: 16px; 

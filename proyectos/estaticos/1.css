@@ -16,21 +16,27 @@ a {text-decoration: underline;
 /*********************************************************************************/
 nav {
     background: #16a085;
-    height: 100px;
+    height: auto;
     text-transform: uppercase;
     font-size: 0.8em;
     text-align:center;
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-nav ul{padding:0; display: flex; text-align: center;}
+nav ul{
+    padding:0; 
+    display: flex; 
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 nav a {
     text-decoration: none; 
     color:white;
     height: 100%;
     line-height: 100px;
-    padding: 40px;
+    padding: 30px;
     letter-spacing: 0.05em;
 }
 a:hover {
@@ -74,13 +80,15 @@ li {list-style: none;}
 /*********************************************************************************/
 #page {
     display: flex;
+    flex-wrap: wrap;
     background: white;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 30px 30px 60px 30px;
 }
 .content {
     flex: 2.5;
-    padding: 0 40px;
+    margin-right: 60px;
+    margin-top: 30px;
 }
 .titulo {
     margin-bottom: 30px;
@@ -93,6 +101,7 @@ li {list-style: none;}
 .subtitulo {
     color: #6F6F6F;
     font-size: 0.9em;
+    margin-top: 18px;
     letter-spacing: 0.15em;
 }
 p {
@@ -103,6 +112,7 @@ ul {
     padding: 0;
 }
 .sidebar {
+    margin-top: 30px;
     flex:1;
 }
 .sidebar h2 {
@@ -205,3 +215,27 @@ h3 {
     padding: 5em 0;
     letter-spacing: 0.3em;
 } 
+
+@media (max-width: 768px) {
+    nav a {
+        padding: 20px 10px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 540px) {
+    .footer .container {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    .box.b3{
+        order:-1;
+        flex-basis: 100%;
+    }
+    .boton-wrapper{
+        padding: 25px;
+        margin-top: 18px;
+    }
+    .box {
+        margin-bottom: 40px;
+    }
+}
