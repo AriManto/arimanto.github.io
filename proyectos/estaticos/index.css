@@ -1,0 +1,35 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffd49d;
+}
+main {max-width: 1200px; margin: 0 auto; padding: 20px;}
+h1 {text-align: center; font-size: 42px;}
+.lista {
+    display: flex; flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    /* padding: 20px; */
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffecd4; 
+}
+
+.lista a {
+    color: black;
+    font-size: 36px;
+    text-decoration: none;
+    line-height: 200px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.lista a:hover {
+    background-color: #AABBCC;
+}

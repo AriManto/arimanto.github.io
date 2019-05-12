@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>#3</title>
-        <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="3.css" rel="stylesheet">
     </head>
     <body>
@@ -22,12 +23,13 @@
                     <li><a href="#">Prensa</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-            </div>   
+                <i class="material-icons botonMenu">dehaze</i>  
+            </div>
         </div>
         <div class="landing container">
-            <div id="empresa"><h2>Maecenas luctus lectus</h2></div>
+            <div id="empresa"><h1>Maecenas luctus lectus</h1></div>
             <div class="descripcion"><p>Accumsan erat vel inceptos class donec curabitur non sem, consequat integer pulvinar venenatis aptent himenaeos justo per sociis, interdum fames porttitor odio malesuada varius felis.
-                Sed fames vel urna sollicitudin ultrices rutrum natoque sodales quis, duis phasellus platea at lobortis molestie nostra blandit magnis, scelerisque praesent sociosqu ornare ultricies himenaeos parturient hac.
+                Sed fames vel urna sollicitudin ultrices rutrum natoque sodales quis.
             </p></div>
             <a href="#" class="cta">Empezar</a>
         </div>
@@ -61,7 +63,7 @@
                 </div>
                 <div class="listas">
                     <div class="lista1">
-                        <h4>ultimos posts</h4>
+                        <h4>recientes</h4>
                         <ul>
                             <li><a href="#">Semper quis egetmi dolore</a></li>
                             <li><a href="#">Quam turpis feugiat dolor</a></li>
@@ -85,7 +87,21 @@
     <div id="copyright-wrapper">
         <div class="copyright container">
             <p>&copy TODOS LOS DERECHOS RESERVADOS</p>
+            <a href="../index.html" class="linkBack">Regresar a proyectos</a>
+            <a href="index.html" class="linkBack">Ver más plantillas</a>
         </div>
     </div>
+    <script>
+        let botonMenu = document.querySelector('.botonMenu');
+        let menu = document.querySelector('.menu ul');
+        botonMenu.addEventListener('click', function(){
+            menu.classList.toggle('menuToggled');
+            if (botonMenu.innerText=='dehaze'){
+                botonMenu.innerText='close';
+            } else {
+                botonMenu.innerText='dehaze';
+            }
+        })
+    </script>
     </body>
 </html>

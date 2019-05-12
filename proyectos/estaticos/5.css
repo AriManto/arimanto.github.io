@@ -1,6 +1,6 @@
 html {box-sizing: border-box; font-family: 'Lato', sans-serif;}
 *, *:before, *:after {box-sizing: inherit; margin: 0px;}
-.container {width: 1200px; margin: 0 auto;}
+.container {max-width: 1200px; margin: 0 auto;}
 .boton, #menu .active {color: #fff; background: #323338; border-radius:4px;
     display: inline-block; padding: 14px 14px; text-decoration: none; margin-bottom: 20px;
     text-transform: uppercase; font-weight: 200; letter-spacing: 1px;
@@ -41,7 +41,7 @@ h2 {display: block;
 /***********************************************************/
 /*      Banner - Menu                                      */
 /***********************************************************/
-#menu {display: flex; text-transform: uppercase; justify-content: center;}
+#menu {display: flex; text-transform: uppercase; justify-content: center; flex-wrap: wrap;}
 #menu li a{color: #000; display: inline-block; padding: 15px 15px;}
 #menu li a:hover {text-decoration: none; color: rgb(219, 124, 0);}
 
@@ -49,7 +49,7 @@ h2 {display: block;
 /***********************************************************/
 /*      Page                                               */
 /***********************************************************/
-h3 {line-height: 1.2em; font-size: 3em; letter-spacing: -2px;
+h1 {line-height: 1.2em; font-size: 3em; letter-spacing: -2px;
     text-transform: uppercase; font-weight: 900; color: #323338;
     margin-bottom: 32px}
 h4 {letter-spacing: -2px; text-transform: uppercase; 
@@ -91,4 +91,18 @@ h4 {letter-spacing: -2px; text-transform: uppercase;
 #copyright-wrapper {background: #f3f2ed; text-align: center;; 
     color: #8A8A8A;}
 .copyright.container { border-top: 1px solid rgba(138,138,138, 0.5); padding: 48px 0;
-width: 1160px;}
+max-width: 1160px;}
+
+@media (max-width: 900px) {
+    .page.container, .footer.container {flex-wrap: wrap; justify-content: space-around;}
+    #footer2 img, #footer2 p, #footer2 h4 {max-width: 528px; width: 100%;}
+    #footer2 {max-width: 540px;}
+    #footer2, #page2 {order:-1; flex: 1 100%; margin-bottom: 40px;}
+    h1 {text-align: center;}
+    #footer1, #footer3, #page1, #page3 {flex: 1 50%;}
+}
+@media (max-width: 570px) {
+    #banner-wrapper {height: auto; padding: 40px 5px;}
+    h1 {font-size: 40px;}
+    #logo h2 {font-size: 50px;}
+}

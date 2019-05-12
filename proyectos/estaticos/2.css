@@ -36,7 +36,7 @@ ul {list-style: none; padding-left:0;}
 .active{background: #C0005F}
 #menu-wrapper {
     height: 100px;
-    background: #A80154;
+    background: #840041;
 }
 
 /* ********************************************** */
@@ -106,7 +106,7 @@ ul {list-style: none; padding-left:0;}
 /* ********************************************** */
 
 #equipo-wrapper {
-    background: #A80154;
+    background: #840041;
     padding: 96px 0;
 }
 .equipo.container{
@@ -205,7 +205,7 @@ ul.social {
 
 #copyright-wrapper {
     height: 200px;
-    background: #A80154;
+    background: #840041;
 }
 .copyright.container {
     text-align: center;

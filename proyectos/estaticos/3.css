@@ -6,10 +6,11 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 /******************************************/
 #banner-wrapper {
     background: url(https://templated.co/items/demos/simplework/images/banner.jpg);
-    height: 860px;
-    width: 100%;
+    /* height: 100vh; */
+    max-height: 1080px;
+    /* width: 100%; */
     background-size: cover;
-    background-position-x: -500px;
+    /* background-position-x: -500px; */
 }
 .header.container {display: flex; height: 150px;}
 .logo {
@@ -39,12 +40,14 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 }
 .menu a:hover {color: #111;}
 .menu .active {background: #1757ae; border-radius: 50px;}
+.botonMenu {display: none;}
+.exitMenu {display: none;}
 
 /******************************************/
 /*    BANNER                              */
 /******************************************/
 .landing.container{padding: 150px 80px; margin: 0 auto; text-align: center;}
-#empresa h2{font-size: 66px; color: #fff; text-align: center; font-weight: 400; padding-bottom: 33px;}
+#empresa h1{font-size: 66px; color: #fff; text-align: center; font-weight: 400; padding-bottom: 33px;}
 .descripcion {font-size: 22px; font-weight: 300; line-height: 40px; color: rgba(255,255,255,.7);}
 .cta{display: inline-block; text-decoration: none; color: white; background: #1757ae; 
     padding: 1em 2.5em; margin-top: 80px; text-transform: uppercase; border-radius: 50px; font-size: 1.5em;
@@ -60,9 +63,9 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 .page {
     display: flex;
     flex-wrap: wrap;
-    padding: 88px;
+    padding: 88px 0;
 }
-.articulo{flex: 1 50%; margin-right: 60px;}
+.articulo{flex: 2.5 50%; margin: 0 30px;}
 .titulo h3 {font-weight: 400; font-size: 2.8em; color: #323232;}
 .titulo span {text-transform: uppercase; font-weight: 400; font-size: 1.1em; 
     color: #6F6F6F; letter-spacing: 0.15em;}
@@ -72,19 +75,19 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 /******************************************/
 /*    SIDEBAR                             */
 /******************************************/
-.sidebar {flex:1 15%;}
-.box h4 , .listas h4{padding: 1.2em 0em 1em 0em;
+.sidebar {flex:1 25%; margin: 0 30px;}
+.box h4 , .listas h4{padding: 1em 0em 1em 0em;
     letter-spacing: 0.10em;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
     color: #454445;
 }
-.box {border-bottom: solid 1px #D1CFCE;padding-bottom: 40px;}
-.box:nth-last-child(2){border:none;}
+.box {border-bottom: solid 1px #D1CFCE;padding-bottom: 30px;}
+/* .box:nth-last-child(2){border:none;} */
 .box a {text-decoration: none; color: #525252; line-height: 180%; font-weight: 300; font-size: 11pt;}
 .box a:hover {text-decoration: underline;}
-.listas {display: flex; margin: 0;}
+.listas {display: flex; margin: 0; justify-content: space-around;}
 .listas ul {list-style: none; margin: 0; padding: 0;}
 .listas a {color: #454445; text-decoration: underline; font-weight: 300; font-size: 11pt;}
 .listas a:hover{text-decoration: none;}
@@ -108,10 +111,65 @@ html {box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
 }
 
 @media (max-width:870px){
-    .menu ul {
-        display: none;
+    .menu ul{
+        box-sizing: border-box;
+        justify-content: space-around;
+        flex-direction: column;
+        position: fixed;
+        right: -40px;
+        height: 100vh;
+        width: 0;
+        min-width: 0;
+        transition: width 0.5s ease-in-out,
+                    min-width 0.5s,
+                    right 0.5s;
+        background-color: #333333;
     }
+    a.cta {
+        padding: 18px 40px;
+        font-size: 20px;
+    }
+    .menu li {
+        height: 80px; flex: 1 20%;
+    }
+    .menu .active {background: none;}
+
+    .botonMenu {display: inline-block; color: white; line-height: 60px; z-index: 4;}
+    .menu ul.menuToggled{
+        position: fixed;
+        right: 0;
+        min-width: 250px;
+        width: 50%;
+        z-index: 3;
+        background-color: #333333;
+    }
+    .menu ul.menuToggled + .botonMenu {
+        position: fixed;
+        right: 30px;
+    }
+    .menuToggled a {color: #DDDDDD;}
+    .menuToggled li {height: 80px; flex: 1 20%;}
     .menu a {
         padding: 15px 10px;
     }
+    .header.container{max-height: 60px;}
+    .logo p {line-height: 60px; font-size: 24px;}
+    .landing.container{padding: 20px 40px;}
+    .cta {margin-top: 30px; margin-bottom: 30px;}
+    .sidebar {flex: 1 50%;}
+    .listas {margin-top: 30px;}
+    .box:first-child{
+        border-top: solid 1px #D1CFCE;
+        margin-top: 30px; 
+    }
+    .page.container{padding: 30px 20px;}
+}
+
+@media (max-width:500px){
+    #empresa h1 {font-size: 32px;}
+    .descripcion p{font-size: 16px;}
+    .cta{font-size: 16px;}
+    .landing.container{padding: 10px;}
+    .page.container{padding: 20px 0;}
+
 }
