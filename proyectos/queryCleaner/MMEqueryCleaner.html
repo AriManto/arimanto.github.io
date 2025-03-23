@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query Cleaner</title>
+</head>
+<body>
+    <style>
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #E3E3E3;
+    padding: 0;
+    margin: 0;
+    font-family: 'Graphik Regular', Calibri;
+}
+header {
+    background-color:  #A100FF;
+    color: white;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 20;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+h4 {margin: 8px 0; color: #666;}
+
+#panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+#panel .queryBox {
+    width: 48%;
+    position: relative;
+}
+
+.queryBox textarea {
+    width: 100%;
+    min-height: 400px;
+    background-color: #EEEEEE;
+    resize: vertical;
+}
+
+.buttons {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.buttons a:hover {opacity: 0.7;}
+
+.buttons a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #222222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#format {
+    background-color: #0d47a1;
+}
+
+#reset {
+    border: 1px solid #d50000;
+    color:#d50000;
+    background-color: white;
+    margin-right: 4px;
+}
+
+.messagePanel {
+    background-color: #77BBCC;
+    color: white;
+    font-size: 2em;
+    min-width: 100%;
+    min-height: 400px;
+    display: flex;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.25s ease;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.25s ease;
+    z-index: -1;
+}
+
+    </style>
+    <header>
+        <h1>MME Query Cleaner</h1>
+    </header>
+    <div class="container">
+        <div id="panel">
+            <div id="inQuery" class="queryBox">
+                <h2>MME Statement Source</h2>
+                <h4>From .VB or .CS file</h4>
+                <textarea name="" id="" cols="30" rows="10">sb.AppendLine(" Declare @hoursPerDay numeric(15,5) ")
+                        sb.AppendLine(" Set @hoursPerDay = (Select TOP 1 wmucd.hourperdayamt ")
+                        sb.AppendLine(" From MME.WorkManagementUnitCalendar wmuc With (nolock) ")
+                        sb.AppendLine(" join mme.WorkManagementUnitCalendarDetail wmucd with (nolock) On wmuc.workmanagementunitcalendarid = wmucd.workmanagementunitcalendarid ")
+                        sb.AppendLine(" where wmuc.workmanagementunitid = @wmuId ")
+                        sb.AppendLine(" and wmuc.countryCd = @countryCd ")
+                        sb.AppendLine(" and wmucd.FiscalMonthNbr = @FiscalMonthNbr ")
+                        sb.AppendLine(" Order By wmucd.WorkManagementUnitCalendarId Desc) ")
+                
+                        sb.AppendLine(" INSERT INTO MME.BillRate ")
+                        sb.AppendLine(" (BillRateCardDetailId, ")
+                        sb.AppendLine(" RateAmt,")
+                        sb.AppendLine(" RateDesc,")
+                        sb.AppendLine(" EffectiveStartTimeId, ")
+                        sb.AppendLine(" EffectiveEndTimeId, ")
+                        sb.AppendLine(" CreateUserId, ")
+                        sb.AppendLine(" CreateDttm, ")
+                        sb.AppendLine(" UpdateUserId, ")
+                        sb.AppendLine(" UpdateDttm, ")
+                        sb.AppendLine(" SourceBillRateId, ")
+                        sb.AppendLine(" ExternalRateId) ")
+                        sb.AppendLine(" SELECT ")
+                        sb.AppendLine(" @BillRateCardDetailId, ")
+                        sb.AppendLine(" (br.RateAmt / @hoursPerDay) as RateAmtCalculated,")
+                        sb.AppendLine(" br.RateDesc, ")
+                        sb.AppendLine(" br.EffectiveStartTimeId, ")
+                        sb.AppendLine(" br.EffectiveEndTimeId, ")
+                        sb.AppendLine(" @CreateUserId, ")
+                        sb.AppendLine(" @CreateDttm, ")
+                        sb.AppendLine(" @UpdateUserId, ")
+                        sb.AppendLine(" @UpdateDttm, ")
+                        sb.AppendLine(" br.BillRateId, ")
+                        sb.AppendLine(" br.ExternalRateId ")
+                        sb.AppendLine(" FROM ")
+                        sb.AppendLine(" MME.BillRate br WITH(NOLOCK) ")
+                        sb.AppendLine(" where br.BillRateId = @BillRateId")
+                </textarea>
+                <div class="buttons">
+                    <a href="#" id="reset">Reset</a>
+                    <a href="#" id="format">Format to SQL</a>
+                </div>
+            </div>
+            <div id="outQuery" class="queryBox">
+                <h2>SQL Query</h2>
+                <h4>Output</h4>
+                <div>
+                    <div class="messagePanel hidden">
+                        <p>Copied to clipboard!</p>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" readonly></textarea>
+                </div>
+                <div class="buttons">
+                    <a href="#" id="copy">Copy to clipboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+const originalQuery = document.querySelector("#inQuery textarea");
+const inputArea = document.querySelector('#inQuery textarea');
+const outputArea = document.querySelector("#outQuery textarea");
+const actionButton = document.querySelector("#format");
+const resetButton = document.querySelector("#reset");
+const copyButton = document.querySelector("#copy");
+const messagePanel = document.querySelector('.messagePanel');
+const messageDuration_MS = 600;
+const keywords = ["WITH", "FROM", "SELECT", "UPDATE", "DELETE", "SET", "DECLARE", "INTO", "ON",
+    "JOIN", "INNER", "LEFT", "RIGHT", "TOP", "ORDER BY", "WHERE", "AND", "OR",
+    "NOLOCK", "AS", "ASC", "DESC", "MERGE", "CROSS", "OUTER"
+];
+
+const regexLine = /"(.*)"/g;
+const regexCommand = /\.\w+\("/g;
+const regexTrimCommand = /[\.\(\"]/g; // For replacing . " ) with empty space
+const regexSchema = /\w+\./g;
+resetButton.addEventListener('click', () => {
+    inputArea.value = "";
+    outputArea.value = "";
+});
+actionButton.addEventListener('click', formatQuery);
+copyButton.addEventListener('click', copyOutputArea);
+//console.log(originalQuery.value);
+
+function formatQuery() {
+    let parsedQuery = originalQuery.value.trim().split("\n");
+    // Regex the commands inside quotation marks
+    // TODO: check for Append, AppendLine or AppendFormat
+    //  -- if AppendFormat, replace {0} and {1} with the values in the method parameters, 
+    // splitting after ", with , (save those to an array, index is {0} {1} etc)
+    parsedQuery = parsedQuery.map(el => {
+        el = el.trim();
+        el = el.match(regexLine);
+        if (el) {
+            el = el.toString();
+            el = el.replace(/"/g, "");
+            el = el.replace(regexSchema, (m) => m.toUpperCase());
+            for (let i = 0; i < keywords.length; i++) {
+                let regexKeyword = new RegExp(`\\b${keywords[i]}\\b`, "gi"); // \s
+                el = el.replace(regexKeyword, keywords[i].toUpperCase() + "");
+            }
+        } else {
+            el = "\n"
+        }
+        return el
+    });
+    let outputString = "";
+    parsedQuery.forEach((el, index) => {
+        if (el) {
+            if (index !== 0) {
+                outputString += "\n";
+            }
+            outputString += el.trim();
+        }
+    });
+    outputArea.value = outputString;
+}
+
+function copyOutputArea() {
+    outputArea.select();
+    document.execCommand("copy");
+    messagePanel.classList.remove("hidden");
+    setTimeout(() => {
+        messagePanel.classList.add("hidden");
+    }, messageDuration_MS);
+    outputArea.setSelectionRange(0, 0);
+    outputArea.blur();
+}
+
+    </script>
+</body>
+</html>

@@ -1,12 +1,10 @@
 @charset "UTF-8";
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   /*Así no hay problemas si lo quiero cambiar*/
 }
 
@@ -16,12 +14,12 @@ body {
 }
 
 h1 {
-  font-family: Merriweather,sans-serif;
+  font-family: Merriweather, sans-serif;
   font-size: 26px;
 }
 
 p {
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 0.75em;
   color: #444444;
 }
@@ -33,7 +31,6 @@ li {
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -47,26 +44,16 @@ header {
 div.headerTop {
   height: 60px;
   background: #111111;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 div.headerTop h1 {
   color: white;
   margin-left: 10%;
 }
 
 div.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
   text-decoration: none;
@@ -77,32 +64,23 @@ div.navbar {
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(98%, #222222));
   background: linear-gradient(to bottom, black 0%, #222222 98%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#222222",GradientType=0 );
   /* IE6-9 */
 }
-
 div.navbar a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   color: white;
   text-decoration: none;
   text-align: center;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 div.navbar a:hover {
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   background: #444444;
 }
-
 div.navbar a.activeNav {
   color: orange;
   border-top: 3px solid orange;
@@ -120,7 +98,6 @@ div.wrapper {
   padding-right: 8px;
   background-color: white;
   margin: 0 auto 8px auto;
-  -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -133,11 +110,9 @@ img {
   border-radius: 10px 10px 10px 10px;
   padding: 2%;
   margin: 20px auto;
-  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.29);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.29);
   text-indent: 5%;
 }
-
 .box h1 {
   text-align: center;
 }
@@ -152,12 +127,10 @@ div.box.skills {
   background-color: orange;
   text-align: center;
 }
-
 div.box.skills a {
   margin: 16px;
 }
 
 div.box.viejo {
   text-align: center;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

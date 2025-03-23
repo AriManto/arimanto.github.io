@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --primary-color: #0b2447;
+  --secondary-color: #19376d;
+  --tertiary-color: #5c8374;
+  --accent: #ed2b2a;
+}
+.primary {
+  color: var(--primary-color, #2e6da4);
+}
+.secondary {
+  color: var(--secondary-color, #19376d);
+}
+.tertiary {
+  color: var(--tertiary-color, #576cbc);
+}
+.accent {
+  color: var(--accent, #93b1a6);
+}
+.primary-bg {
+  background-color: var(--primary-color, #2e6da4);
+}
+.secondary-bg {
+  background-color: var(--secondary-color, #19376d);
+}
+.tertiary-bg {
+  background-color: var(--tertiary-color, #576cbc);
+}
+.accent-bg {
+  background-color: var(--accent, #93b1a6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--primary-color, #2e6da4);
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.boton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      opacity: 0.8;
+      //color: var(--secondary-color);
+    }
+  }
+}
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color, #2e6da4);
+  color: white;
+  padding: 2rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &:nth-child(even) {
+    background-color: var(--primary-color, #2e6da4);
+  }
+  &:nth-child(odd) {
+    background-color: var(--secondary-color, navyblue);
+  }
+
+  &#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      text-align: left;
+    }
+    h2 {
+      font-size: 4rem;
+      text-align: left;
+      margin-bottom: 2rem;
+      color: var(--accent, #93b1a6);
+    }
+    .boton {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+#home-image {
+  background-image: url(/assets/true-agency-o4UhdLv5jbQ-unsplash.jpg);
+  background-size: cover;
+  border-radius: 25px;
+  height: 50%;
+  width: 40%;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}

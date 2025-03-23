@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query Cleaner</title>
+    <link rel="stylesheet" href="queryCleaner.css">
+</head>
+<body>
+    <header>
+        <h1>MME Query Cleaner</h1>
+    </header>
+    <div class="container">
+        <div id="panel">
+            <div id="inQuery" class="queryBox">
+                <h2>MME Statement Source</h2>
+                <h4>From .VB or .CS file</h4>
+                <textarea name="" id="" cols="30" rows="10">sb.AppendLine(" Declare @hoursPerDay numeric(15,5) ")
+                        sb.AppendLine(" Set @hoursPerDay = (Select TOP 1 wmucd.hourperdayamt ")
+                        sb.AppendLine(" From MME.WorkManagementUnitCalendar wmuc With (nolock) ")
+                        sb.AppendLine(" join mme.WorkManagementUnitCalendarDetail wmucd with (nolock) On wmuc.workmanagementunitcalendarid = wmucd.workmanagementunitcalendarid ")
+                        sb.AppendLine(" where wmuc.workmanagementunitid = @wmuId ")
+                        sb.AppendLine(" and wmuc.countryCd = @countryCd ")
+                        sb.AppendLine(" and wmucd.FiscalMonthNbr = @FiscalMonthNbr ")
+                        sb.AppendLine(" Order By wmucd.WorkManagementUnitCalendarId Desc) ")
+                
+                        sb.AppendLine(" INSERT INTO MME.BillRate ")
+                        sb.AppendLine(" (BillRateCardDetailId, ")
+                        sb.AppendLine(" RateAmt,")
+                        sb.AppendLine(" RateDesc,")
+                        sb.AppendLine(" EffectiveStartTimeId, ")
+                        sb.AppendLine(" EffectiveEndTimeId, ")
+                        sb.AppendLine(" CreateUserId, ")
+                        sb.AppendLine(" CreateDttm, ")
+                        sb.AppendLine(" UpdateUserId, ")
+                        sb.AppendLine(" UpdateDttm, ")
+                        sb.AppendLine(" SourceBillRateId, ")
+                        sb.AppendLine(" ExternalRateId) ")
+                        sb.AppendLine(" SELECT ")
+                        sb.AppendLine(" @BillRateCardDetailId, ")
+                        sb.AppendLine(" (br.RateAmt / @hoursPerDay) as RateAmtCalculated,")
+                        sb.AppendLine(" br.RateDesc, ")
+                        sb.AppendLine(" br.EffectiveStartTimeId, ")
+                        sb.AppendLine(" br.EffectiveEndTimeId, ")
+                        sb.AppendLine(" @CreateUserId, ")
+                        sb.AppendLine(" @CreateDttm, ")
+                        sb.AppendLine(" @UpdateUserId, ")
+                        sb.AppendLine(" @UpdateDttm, ")
+                        sb.AppendLine(" br.BillRateId, ")
+                        sb.AppendLine(" br.ExternalRateId ")
+                        sb.AppendLine(" FROM ")
+                        sb.AppendLine(" MME.BillRate br WITH(NOLOCK) ")
+                        sb.AppendLine(" where br.BillRateId = @BillRateId")
+                </textarea>
+                <div class="buttons">
+                    <a href="#" id="reset">Reset</a>
+                    <a href="#" id="format">Format to SQL</a>
+                </div>
+            </div>
+            <div id="outQuery" class="queryBox">
+                <h2>SQL Query</h2>
+                <h4>Output</h4>
+                <div>
+                    <div class="messagePanel hidden">
+                        <p>Copied to clipboard!</p>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" readonly></textarea>
+                </div>
+                <div class="buttons">
+                    <a href="#" id="copy">Copy to clipboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="queryCleaner.js"></script>
+</body>
+</html>

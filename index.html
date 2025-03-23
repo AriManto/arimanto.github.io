@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>&ltAriel Manto&gt</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="css/main.css" type="text/css" rel=stylesheet>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Merriweather:400,700" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariel Manto - Web Developer</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
     <header>
-        <div class="headerTop">
-            <h1>Ariel Manto</h1>
+      <div class="container header-content">
+        <div class="logo">
+          <h1>Ariel Manto</h1>
         </div>
-        <div class="navbar">
-            <a href=# class="activeNav"><i class="fas fa-home"></i></a></li>
-            <a href="certificados/index.html">Certificados</a>
-            <a href="proyectos/index.html">Proyectos</a>
-            <a href="blog/index.html">Blog</a>
-        </div>
+        <nav>
+          <ul>
+            <li class="boton"><a href="#home">Inicio</a></li>
+            <li class="boton"><a href="#about">Sobre mí</a></li>
+            <li class="boton"><a href="#portfolio">Portfolio</a></li>
+            <li class="boton"><a href="#blog">Blog</a></li>
+            <li class="boton accent-bg"><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="wrapper">
-        <img src="fondo3.jpg">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="main.js"></script>
-</body>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Ariel Manto</h1>
+        <h2>Fullstack Developer</h2>
+        <ul class="botones">
+          <li class="boton tertiary-bg">
+            <a href="javascript:null">Descargar CV</a>
+          </li>
+          <li class="boton accent-bg">
+            <a href="javascript:null">Contactarme</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container" id="home-image"></div>
+    </section>
+
+    <section class="hero" id="about">
+      <div class="container">
+        <h2>Sobre mí</h2>
+      </div>
+    </section>
+    <section class="hero" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+      </div>
+    </section>
+    <section class="hero" id="blog">
+      <div class="container">
+        <h2>Blog</h2>
+      </div>
+    </section>
+    <section class="hero" id="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+      </div>
+    </section>
+    <!--
+      <footer>
+        <div class="container">
+          <p>&copy; 2025 Ariel Manto. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      -->
+  </body>
 </html>
