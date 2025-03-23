@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, Calibri, sans-serif;
 }
 
 :root {
   --primary-color: #0b2447;
   --secondary-color: #19376d;
   --tertiary-color: #5c8374;
-  --accent: #ed2b2a;
+  --accent: #c71817;
+  --gray: #ccc;
 }
 
 .primary {
@@ -44,6 +45,10 @@
   background-color: var(--accent, #93b1a6);
 }
 
+.accent-border {
+  border: 2px var(--accent, #93b1a6) solid;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -73,9 +78,6 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.boton a:hover {
-  opacity: 0.8;
-}
 
 /* Header */
 header {
@@ -84,6 +86,7 @@ header {
   background-color: var(--primary-color, #2e6da4);
   color: white;
   padding: 2rem 0;
+  z-index: 100;
 }
 
 .header-content {
@@ -95,6 +98,10 @@ header {
 
 .logo h1 {
   font-size: 2rem;
+  color: var(--gray, #ccc);
+}
+.logo h1 span {
+  color: white;
 }
 
 ul {
@@ -126,23 +133,32 @@ ul {
 .hero#home h1 {
   font-size: 3rem;
   text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: var(--gray, #ccc);
+}
+.hero#home h1 span {
+  color: white;
 }
 .hero#home h2 {
   font-size: 4rem;
   text-align: left;
   margin-bottom: 2rem;
   color: var(--accent, #93b1a6);
+  font-family: "Merriweather", sans-serif;
 }
 .hero#home .boton {
   padding: 1rem 2rem;
+}
+.hero#home #home-left {
+  transform: translateX(25%);
 }
 
 #home-image {
   background-image: url(/assets/true-agency-o4UhdLv5jbQ-unsplash.jpg);
   background-size: cover;
   border-radius: 25px;
-  height: 50%;
-  width: 40%;
+  height: 40%;
+  width: 30%;
 }
 
 .hero p {
