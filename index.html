@@ -19,51 +19,195 @@
         <nav>
           <ul>
             <li class="boton"><a href="#home">Inicio</a></li>
-            <li class="boton"><a href="#about">Sobre mí</a></li>
+            <li class="boton"><a href="#skills">Skills</a></li>
             <li class="boton"><a href="#portfolio">Portfolio</a></li>
-            <li class="boton"><a href="#blog">Blog</a></li>
-            <li class="boton accent-border"><a href="#contact">Contacto</a></li>
+            <li class="boton">
+              <a class="accent-border" href="#contact">Contacto</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <section class="hero" id="home">
-      <div class="container" id="home-left">
-        <h1><span>A</span>riel <span>M</span>anto</h1>
-        <h2>Fullstack Developer</h2>
-        <ul class="botones">
-          <li class="boton tertiary-bg">
-            <a href="javascript:null">Descargar CV</a>
-          </li>
-          <li class="boton accent-bg">
-            <a href="javascript:null">Contactarme</a>
-          </li>
-        </ul>
-      </div>
-      <div class="container" id="home-image"></div>
-    </section>
-
-    <section class="hero" id="about">
-      <div class="container">
-        <h2>Sobre mí</h2>
-      </div>
-    </section>
-    <section class="hero" id="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-      </div>
-    </section>
-    <section class="hero" id="blog">
-      <div class="container">
-        <h2>Blog</h2>
-      </div>
-    </section>
-    <section class="hero" id="contact">
-      <div class="container">
-        <h2>Contacto</h2>
-      </div>
-    </section>
+    <main>
+      <section id="home">
+        <div class="container" id="home-left">
+          <h1><span>A</span>riel <span>M</span>anto</h1>
+          <h2>Fullstack Developer</h2>
+          <ul class="botones">
+            <li class="boton secondary-bg">
+              <a href="javascript:null">Descargar CV</a>
+            </li>
+            <li class="boton accent-bg">
+              <a href="javascript:null">Contactarme</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container" id="home-image"></div>
+      </section>
+      <section id="skills">
+        <div class="container flex-columns flex-section-container">
+          <div class="flex-section-title">
+            <h3>Skills</h3>
+          </div>
+          <div>
+            <h4 class="skills-subsection">CON EXPERIENCIA PROFESIONAL</h4>
+            <ul class="flex-rows">
+              <li class="card gray-bg">
+                <h5>Frontend</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">Angular</li>
+                  <li class="full-width">Typescript</li>
+                  <li class="full-width">HTML</li>
+                  <li class="full-width">CSS</li>
+                  <li class="full-width">Javascript</li>
+                  <li class="full-width">RxJs</li>
+                  <li class="full-width">ag-grid</li>
+                  <li class="full-width">Bootstrap</li>
+                  <li class="full-width">Angular Material</li>
+                </ul>
+              </li>
+              <li class="card gray-bg">
+                <h5>Backend</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">REST APIs</li>
+                  <li class="full-width">C#</li>
+                  <li class="full-width">Node.js</li>
+                  <li class="full-width">VB.Net</li>
+                  <li class="full-width">Postman</li>
+                </ul>
+              </li>
+              <li class="card gray-bg">
+                <h5>Databases</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">SQL (SqlServer, Postgre)</li>
+                  <li class="full-width">NoSQL (Firebase)</li>
+                </ul>
+              </li>
+              <li class="card gray-bg">
+                <h5>Testing</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">Karma Jasmine</li>
+                  <li class="full-width">Mocha</li>
+                  <li class="full-width">XUnit</li>
+                  <li class="full-width">Selenium</li>
+                </ul>
+              </li>
+              <li class="card gray-bg">
+                <h5>Infrastructure</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">Git</li>
+                  <li class="full-width">Azure DevOps</li>
+                  <li class="full-width">AWS</li>
+                </ul>
+              </li>
+            </ul>
+            <h4 class="skills-subsection">AMATEUR</h4>
+            <ul class="flex-rows">
+              <li class="card gray-bg">
+                <h5>Mobile/Desktop</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">Flutter</li>
+                  <li class="full-width">Electron</li>
+                </ul>
+              </li>
+              <li class="card gray-bg">
+                <h5>Game Dev</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">Unity</li>
+                  <li class="full-width">Blender</li>
+                  <li class="full-width">Aseprite</li>
+                  <li class="full-width">Mixamo</li>
+                  <li class="full-width">Cascadeur</li>
+                </ul>
+              </li>
+              <li class="card gray-bg">
+                <h5>Editing</h5>
+                <ul class="card-content flex-rows">
+                  <li class="full-width">OBS</li>
+                  <li class="full-width">Adobe Premiere</li>
+                  <li class="full-width">Photoshop</li>
+                  <li class="full-width">Audacity</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="container flex-columns flex-section-container">
+          <div class="flex-section-title">
+            <h3>Portfolio</h3>
+          </div>
+          <div>
+            <ul class="flex-rows">
+              <li class="card gray-bg">
+                <h5>Pokechecker</h5>
+                <div>
+                  Utilidad para Pokemon competitivo. Calcula las interacciones
+                  ofensivas y defensivas (type coverage) del equipo para
+                  encontrar debilidades
+                </div>
+              </li>
+              <li class="card gray-bg">
+                <h5>PC Hardware store</h5>
+                <div>
+                  Single Page Application de una tienda de computación ficticia.
+                  Hecho con Angular y Firebase como base de datos.
+                  Funcionalidades: Lista de productos, con filtro por categorías
+                  y orden alfabético o por precio, Carrito de compras, Interfaz
+                  de CRUD / ABM para los admins del sitio
+                </div>
+              </li>
+              <li class="card gray-bg">
+                <h5>AutoLike for YT</h5>
+                <div>
+                  Extensión de Chrome para presionar Like automáticamente en el
+                  video que se está reproduciendo. Modos de uso: Activado para
+                  todos los canales / Activado para canales favoritos /
+                  Desactivado
+                </div>
+              </li>
+              <li class="card gray-bg">
+                <h5>Bug Files Creator</h5>
+                <div>
+                  Herramienta que utilizo a diario en mi trabajo, para
+                  automatizar la generación de carpetas y archivos (.txt y .sql)
+                  con una plantilla predeterminada
+                </div>
+              </li>
+              <li class="card gray-bg">
+                <h5>Conversor URL ASCII</h5>
+                <div>
+                  Herramienta para normalizar una URL que contenga códigos ASCII
+                </div>
+              </li>
+              <li class="card gray-bg">
+                <h5>RGB Color Game</h5>
+                <div>
+                  Minijuego de adivinar cuál de los colores dados a elegir es el
+                  correcto según los valores de RGB
+                </div>
+              </li>
+              <li class="card gray-bg">
+                <h5>Galería</h5>
+                <div>Portfolio ficticio de fotografía</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container flex-columns flex-section-container">
+          <div class="flex-section-title">
+            <h3>Contacto</h3>
+          </div>
+          <div id="contact-image"></div>
+          <div>
+            Para más información, enviame un mail a ariel_manto@yahoo.com.ar
+          </div>
+        </div>
+      </section>
+    </main>
     <!--
       <footer>
         <div class="container">
