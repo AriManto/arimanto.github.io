@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>ToDo list</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/styles.css"
+    />
     <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-            <a href="../index.html">Volver a Proyectos</a>
+      <a href="/index.html">Volver</a>
     </header>
     <style>
-        header{position:fixed; z-index:1; top:0; background-color: #252839; width:100%;display:flex;text-align:center;justify-content: center; height:40px;}
-        header > * {color:white;text-decoration: none; padding:0.8em; align-self: center;border:2px solid rgb(87, 86, 86);border-radius:10px;font-size:12px!important;}
-        header > *:hover { background-color:#039be5;}
+      header {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #252839;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+      }
+      header > * {
+        color: white;
+        text-decoration: none;
+        padding: 0.8em;
+        align-self: center;
+        border: 2px solid rgb(87, 86, 86);
+        border-radius: 10px;
+        font-size: 12px !important;
+      }
+      header > *:hover {
+        background-color: #039be5;
+      }
     </style>
     <div id="container">
-        <h1>Lista<i class="fa fa-plus"></i></h1>
-        <input type="text" placeholder="Agregar Item">
+      <h1>Lista<i class="fa fa-plus"></i></h1>
+      <input type="text" placeholder="Agregar Item" />
 
-        <ul>
-            <li><span><i class="fas fa-times"></i></span> Comprar frutas</li>
-            <li><span><i class="fas fa-times"></i></span> Caminata de 30 minutos</li>
-            <li><span><i class="fas fa-times"></i></span> Estudiar para el examen</li>
-            <li><span><i class="fas fa-times"></i></span> Practicar inglés</li>
-        </ul>
-
-
+      <ul>
+        <li>
+          <span><i class="fas fa-times"></i></span> Comprar frutas
+        </li>
+        <li>
+          <span><i class="fas fa-times"></i></span> Caminata de 30 minutos
+        </li>
+        <li>
+          <span><i class="fas fa-times"></i></span> Estudiar para el examen
+        </li>
+        <li>
+          <span><i class="fas fa-times"></i></span> Practicar inglés
+        </li>
+      </ul>
     </div>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>

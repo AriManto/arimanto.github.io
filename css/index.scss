@@ -271,9 +271,47 @@ section {
   margin: 0 auto;
 }
 //#region Portfolio
-#proyectos {
+#portfolio {
   .flex-section-title {
     margin-bottom: 5rem;
+  }
+  .card-with-image {
+    background: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    margin: 1rem;
+    position: relative;
+    padding: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: var(--text);
+    padding-top: 8px;
+    img {
+      height: 70%;
+      width: 95%;
+      object-fit: contain;
+      background: lightgray;
+    }
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+      transform: scale(1.15);
+      transition: all ease-in-out 0.2s;
+    }
+    h5 {
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      .wip {
+        font-weight: 400;
+        font-size: 0.7rem;
+      }
+    }
+    li,
+    div {
+      text-align: left;
+      font-size: 0.8rem;
+    }
   }
 }
 //#endregion

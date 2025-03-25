@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Color Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="colorGame.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="colorGame.css" />
+  </head>
+  <body>
     <header>
-        <a href="../index.html">Volver a Proyectos</a>
+      <a href="/index.html">Volver</a>
     </header>
     <style>
-        header{position:fixed; z-index:1; top:0; background-color: #252839; width:100%;display:flex;text-align:center;justify-content: center; height:40px;}
-        header > * {color:white;text-decoration: none; padding:0.8em; align-self: center;border:2px solid rgb(87, 86, 86);border-radius:10px;font-size:12px!important;}
-        header > *:hover { background-color:#039be5;}
+      header {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #252839;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+      }
+      header > * {
+        color: white;
+        text-decoration: none;
+        padding: 0.8em;
+        align-self: center;
+        border: 2px solid rgb(87, 86, 86);
+        border-radius: 10px;
+        font-size: 12px !important;
+      }
+      header > *:hover {
+        background-color: #039be5;
+      }
     </style>
-    <h1>Adivina <br><span id="colorDisplay">RGB</span><br> el color</h1>
-    
-    <div id="stripe">
-        <button id="reset">Colores nuevos</button>
-        <span id="message"></span>
-        <button class="mode">Fácil</button>
-        <button class="mode selected">Difícil</button>
+    <h1>
+      Adivina <br /><span id="colorDisplay">RGB</span><br />
+      el color
+    </h1>
 
+    <div id="stripe">
+      <button id="reset">Colores nuevos</button>
+      <span id="message"></span>
+      <button class="mode">Fácil</button>
+      <button class="mode selected">Difícil</button>
     </div>
 
     <div id="container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
     </div>
     <script src="colorGame.js"></script>
-</body>
+  </body>
 </html>

@@ -50,7 +50,7 @@
             <h3>Skills</h3>
           </div>
           <div>
-            <h4 class="skills-subsection">CON EXPERIENCIA PROFESIONAL</h4>
+            <h4 class="skills-subsection">PROFESIONALMENTE</h4>
             <ul class="flex-rows">
               <li class="card gray-bg">
                 <h5>Frontend</h5>
@@ -138,62 +138,105 @@
           <div class="flex-section-title">
             <h3>Portfolio</h3>
           </div>
-          <div>
-            <ul class="flex-rows">
-              <li class="card gray-bg">
-                <h5>Pokechecker</h5>
-                <div>
-                  Utilidad para Pokemon competitivo. Calcula las interacciones
-                  ofensivas y defensivas (type coverage) del equipo para
-                  encontrar debilidades
-                </div>
-              </li>
-              <li class="card gray-bg">
-                <h5>PC Hardware store</h5>
-                <div>
-                  Single Page Application de una tienda de computación ficticia.
-                  Hecho con Angular y Firebase como base de datos.
-                  Funcionalidades: Lista de productos, con filtro por categorías
-                  y orden alfabético o por precio, Carrito de compras, Interfaz
-                  de CRUD / ABM para los admins del sitio
-                </div>
-              </li>
-              <li class="card gray-bg">
-                <h5>AutoLike for YT</h5>
-                <div>
-                  Extensión de Chrome para presionar Like automáticamente en el
-                  video que se está reproduciendo. Modos de uso: Activado para
-                  todos los canales / Activado para canales favoritos /
-                  Desactivado
-                </div>
-              </li>
-              <li class="card gray-bg">
-                <h5>Bug Files Creator</h5>
-                <div>
-                  Herramienta que utilizo a diario en mi trabajo, para
-                  automatizar la generación de carpetas y archivos (.txt y .sql)
-                  con una plantilla predeterminada
-                </div>
-              </li>
-              <li class="card gray-bg">
-                <h5>Conversor URL ASCII</h5>
-                <div>
-                  Herramienta para normalizar una URL que contenga códigos ASCII
-                </div>
-              </li>
-              <li class="card gray-bg">
+          <ul class="flex-rows" id="portfolio-container">
+            <a href="proyectos/colorGame/index.html">
+              <li class="card-with-image gray-bg">
+                <img
+                  src="assets/thumbnails_proyectos/rgbColorGame.png"
+                  alt="RGB Color Game"
+                />
                 <h5>RGB Color Game</h5>
                 <div>
                   Minijuego de adivinar cuál de los colores dados a elegir es el
                   correcto según los valores de RGB
                 </div>
               </li>
-              <li class="card gray-bg">
+            </a>
+            <a href="/proyectos/lista/index.html">
+              <li class="card-with-image gray-bg">
+                <img
+                  src="assets/thumbnails_proyectos/todoList.png"
+                  alt="ToDo List"
+                />
+                <h5>ToDo List</h5>
+                <div>Simple lista de tareas en Javascript</div>
+              </li>
+            </a>
+            <a href="proyectos/ConversorURL/index.html">
+              <li class="card-with-image gray-bg">
+                <img
+                  src="assets/thumbnails_proyectos/url_converter.png"
+                  alt="URL Converter"
+                />
+                <h5>Conversor URL ASCII</h5>
+                <div>
+                  Herramienta para normalizar una URL que contenga códigos ASCII
+                </div>
+              </li>
+            </a>
+            <li class="card-with-image gray-bg">
+              <img
+                src="assets/thumbnails_proyectos/pokechecker.png"
+                alt="Pokemon Checker"
+              />
+              <h5>Pokechecker <span class="wip">(in progress)</span></h5>
+              <div>
+                Utilidad para Pokemon competitivo. Calcula las interacciones
+                ofensivas y defensivas (type coverage) del equipo para encontrar
+                debilidades
+              </div>
+            </li>
+            <li class="card-with-image gray-bg">
+              <a href=""></a>
+              <img
+                src="assets/thumbnails_proyectos/pc_store.png"
+                alt="PC Hardware store"
+              />
+              <h5>PC Hardware store <span class="wip">(in progress)</span></h5>
+              <div>
+                Single Page Application de una tienda de computación ficticia.
+                Frontend: Angular DB: Firebase . Lista de productos, con filtro
+                por categorías y orden alfabético o por precio, Carrito de
+                compras, CRUD/ABM para admins
+              </div>
+            </li>
+            <li class="card-with-image gray-bg">
+              <img
+                src="assets/thumbnails_proyectos/autolike.png"
+                alt="Autolike for YT"
+              />
+              <h5>AutoLike for YT <span class="wip">(in progress)</span></h5>
+              <div>
+                Extensión de Chrome para presionar Like automáticamente en el
+                video que se está reproduciendo. Modos de uso: Activado para
+                todos los canales / Activado para canales favoritos /
+                Desactivado
+              </div>
+            </li>
+
+            <a href="proyectos/web_galeria/index.html">
+              <li class="card-with-image gray-bg">
+                <img
+                  src="assets/thumbnails_proyectos/galeria.gif"
+                  alt="Galería"
+                />
                 <h5>Galería</h5>
                 <div>Portfolio ficticio de fotografía</div>
               </li>
-            </ul>
-          </div>
+            </a>
+            <li class="card-with-image gray-bg">
+              <img
+                src="assets/thumbnails_proyectos/bugfilescreator.png"
+                alt="Bug Files Creator"
+              />
+              <h5>Bug Files Creator</h5>
+              <div>
+                Herramienta que utilizo a diario en mi trabajo, para automatizar
+                la generación de carpetas y archivos (.txt y .sql) con una
+                plantilla predeterminada
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section id="contact">
