@@ -1,0 +1,63 @@
+div.cardwrapper{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr;
+    padding:0;
+    background:transparent;
+    margin-bottom:10px;
+    h2 {
+        align-self:center;
+    }
+}
+div.wrapper{
+    padding: 8px 8px 1px 8px;
+}
+main.box {
+    margin-top:0;
+    margin-bottom:8px;
+    border-radius:10px;
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(6,113,201,1) 54%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(6,113,201,1) 54%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(6,113,201,1) 54%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    h1{
+        color:white;
+        font-size:2em;
+    }
+}
+.card {
+    border-radius:10px;
+    padding:5%;
+    p { 
+    margin-left:5%;
+    }
+}
+#web{
+    background: rgb(87,0,175); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(87,0,175,1) 0%, rgba(96,66,145,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(87,0,175,1) 0%,rgba(96,66,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(87,0,175,1) 0%,rgba(96,66,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5700af', endColorstr='#604291',GradientType=1 ); /* IE6-9 */
+    color:#ffeb3b;
+    p{
+        color:#ffeb3b;
+    }
+    a{
+        color:blue;
+    }
+}
+#java{
+    background: rgb(255,153,0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(255,229,117,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%,rgba(255,229,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,153,0,1) 0%,rgba(255,229,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ffe575',GradientType=1 ); /* IE6-9 */
+    color:black;
+    a:hover{
+        
+    }
+}
+a.tituloProyecto{
+    font-size:24px;
+}

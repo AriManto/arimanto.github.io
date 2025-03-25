@@ -1,0 +1,225 @@
+/*idea, class="active" -> subrayado
+.button:hover { background-color: color del sitio en RGBA, con alpha 0.5 o}*/
+
+body {
+	margin: 0;
+	padding-top: 0;
+	background-color: #252839;
+	min-width: 320px;
+	/* background-image:url("universemilkyway.jpg"); */
+	/* background-size:cover; */
+	height: 100%;
+}
+.container {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.jumbotron {
+	margin-bottom: 1rem;
+	width: 93%;
+	max-width: 1200px;
+	margin: 0 auto 1rem auto;
+	padding: 20px;
+}
+/* =============================================================== */
+/*                           NAVBAR                               */
+/* ============================================================== */
+.navbar {
+	position: fixed;
+	top:0;
+	background-color: #252839!important;
+	width: 100%;
+	text-align: left;
+	padding:0;
+}
+  .xtarget::before {
+	content:"";
+	display:block;
+	height:17px; /* fixed header height*/
+	margin:-17px 0 0; /* negative fixed header height */
+	visibility: hidden;
+  }
+.navbar a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px;
+	font-family: "Raleway", sans-serif;
+	margin-top:-90px;
+	padding-top:90px;
+}
+
+.navbar a:hover {
+    background: black;
+    transition: 0.8s;
+}
+button.navbar-toggler {
+	padding: 10px;
+}
+a.nav-link {
+	margin:auto;
+	padding: 15px;
+	width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+}
+div.navbar.navbar-expand-sm.navbar-dark.bg-dark {
+	padding: 0px;
+	margin: auto;
+	text-align: center;
+}
+a.active.nav-link.nav-home {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: orange!important;
+}
+/* =============================================================== */
+/*                           HOME                                  */
+/* ============================================================== */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+p, li{
+	 font-family: 'Raleway', sans-serif;
+	 }
+div#Home {
+	margin-top: 50px;
+	padding: 20px;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	color: white;
+	background-image: url("fondo3.jpg");
+	background-size: 1200px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	div#Home{
+		background-size:1500px;
+		background-position-y:50%;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	div#Home{
+		background-size: 1100px;
+
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	div#Home{
+		background-size:1200px;
+
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	div#Home{
+		background-size:1200px;
+
+	}
+}
+
+
+#Home h1  {
+	font-family: "Raleway", sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+	border: 2px solid white;
+	color: orange;
+	width: 90%;
+	max-width: 500px;
+	margin: 60px auto 10px auto;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(186, 186, 186, 0.4)
+	/* width: 300px; */
+	}
+#Home h2 {
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+	color: #f7d08a;
+}
+/* ============================================
+=                 SECTIONS                   =
+============================================ */
+#About {
+	background-color: orange;
+	color: #333;
+	margin-top: 1rem;
+}
+#About>p {
+	text-indent: 5%;
+}
+h2 {
+	font-size: 2rem;
+	font-family: "Raleway";
+	text-align: center;
+	font-weight: bold;
+	color: rgb(51, 51, 51);
+}
+h3 {
+	font-size: 1.2rem;
+	color: rgb(51, 51, 51);
+}
+#Skills {
+	background-color: #e9ebeb;
+	color: black;
+}
+#Courses {
+	background-color: rgb(210, 255, 210);
+	/*color: white;*/
+}
+#Courses a {
+	font-weight: bold;
+}
+#Contact {
+	background-color: #CCC9E7;
+	/* color: white; */
+	/* margin-bottom: 0; */
+}
+/* =============================================================== */
+/*                           FOOTER                               */
+/* ============================================================== */
+footer {
+	background-color: #333;
+	color: white;
+	/* text-align: right; */
+	padding: 10px;
+	width: 100%;
+}
+footer .container {
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer a {
+	/* float: right; */
+	right:0;
+	font-size: 50px;
+	margin: 5px;
+	color: rgba(255,255,255,.5);
+	text-align: right;
+}
+footer p {
+	margin:1em 0;
+}
+footer a:hover {
+	color: white;
+	transition: 0.8s;
+}
+.footer-left {
+	text-align: left;
+}
+.footer-right {
+	text-align: right;
+}
