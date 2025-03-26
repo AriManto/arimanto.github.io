@@ -123,10 +123,11 @@ body {
 
 .boton {
   border-radius: 0.5rem;
+  opacity: 0.8;
 }
 .boton:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
 }
 .boton a {
   color: white;
@@ -195,6 +196,11 @@ nav ul li a.nav-link {
 }
 nav ul li:hover a.nav-link {
   color: white !important;
+}
+
+#btn-to-top {
+  position: fixed;
+  bottom: 0;
 }
 
 /*#region Sections*/

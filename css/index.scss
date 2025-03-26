@@ -104,9 +104,10 @@ body {
 }
 .boton {
   border-radius: 0.5rem;
+  opacity: 0.8;
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 1;
   }
   a {
     color: white;
@@ -176,6 +177,10 @@ nav {
       }
     }
   }
+}
+#btn-to-top {
+  position: fixed;
+  bottom: 0;
 }
 //#endregion
 
